@@ -4,249 +4,296 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Customers page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header>
-      <a href="">
-        <img
-          src="./images/logo.svg"
-          alt="Logo of our site"
-          width="66"
-          height="52"
-        />
-      </a>
-      <nav>
-        <ul>
-          <li>
-            <a href="./index.html">Home</a>
-          </li>
-          <li>
-            <a href="">Customers</a>
-          </li>
-          <li>
-            <a href="">About</a>
-          </li>
-          <li>
-            <a href="">Service</a>
-          </li>
-          <li>
-            <a href="">Menu</a>
-          </li>
-          <li>
-            <a href="">Contact</a>
-          </li>
-        </ul>
-      </nav>
-      <button type="button">Order Now</button>
+    <header class="header">
+      <div class="container header-container">
+        <a href="" class="logo">
+          <img
+            class="logo-image"
+            src="./images/logo.svg"
+            alt="Logo of our site"
+            width="66"
+            height="52"
+          />
+        </a>
+        <nav class="navigation">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a href="./index.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="" class="nav-link current">Customers</a>
+            </li>
+            <li class="nav-item">
+              <a href="" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="" class="nav-link">Service</a>
+            </li>
+            <li class="nav-item">
+              <a href="" class="nav-link">Menu</a>
+            </li>
+            <li class="nav-item">
+              <a href="" class="nav-link"> Contact</a>
+            </li>
+          </ul>
+        </nav>
+        <button type="button" class="header-button btn">Order Now</button>
+      </div>
     </header>
     <main>
       <!-- Reviews -->
-      <section>
-        <h2>What our Customers Say</h2>
-        <p>
-          Don't just take our word for it - see what our satisfied customers
-          have to say
-        </p>
-        <ul>
-          <li>
-            <ul>
-              <li>
-                <svg
-                  width="17"
-                  height="18"
-                  viewBox="0 0 17 18"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M7.71026 1.23228C8.00245 0.52674 8.99759 0.52674 9.28978 1.23228L11.0142 5.3965C11.1375 5.69394 11.416 5.89717 11.7357 5.92291L16.2118 6.28333C16.9702 6.34439 17.2777 7.29494 16.6999 7.79206L13.2896 10.7261C13.046 10.9357 12.9396 11.2645 13.014 11.5778L14.0559 15.9648C14.2324 16.7081 13.4274 17.2956 12.7781 16.8973L8.94588 14.5464C8.67215 14.3784 8.3279 14.3784 8.05418 14.5464L4.22195 16.8973C3.57265 17.2956 2.76757 16.7081 2.9441 15.9648L3.98602 11.5778C4.06044 11.2645 3.95406 10.9357 3.71048 10.7261L0.300104 7.79206C-0.277711 7.29494 0.0298077 6.34439 0.788199 6.28333L5.26436 5.92291C5.58409 5.89717 5.8626 5.69394 5.98577 5.3965L7.71026 1.23228Z"
-                    fill="#FFE550"
-                  />
-                </svg>
-              </li>
-              <li>
-                <svg
-                  width="17"
-                  height="18"
-                  viewBox="0 0 17 18"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M7.71026 1.23228C8.00245 0.52674 8.99759 0.52674 9.28978 1.23228L11.0142 5.3965C11.1375 5.69394 11.416 5.89717 11.7357 5.92291L16.2118 6.28333C16.9702 6.34439 17.2777 7.29494 16.6999 7.79206L13.2896 10.7261C13.046 10.9357 12.9396 11.2645 13.014 11.5778L14.0559 15.9648C14.2324 16.7081 13.4274 17.2956 12.7781 16.8973L8.94588 14.5464C8.67215 14.3784 8.3279 14.3784 8.05418 14.5464L4.22195 16.8973C3.57265 17.2956 2.76757 16.7081 2.9441 15.9648L3.98602 11.5778C4.06044 11.2645 3.95406 10.9357 3.71048 10.7261L0.300104 7.79206C-0.277711 7.29494 0.0298077 6.34439 0.788199 6.28333L5.26436 5.92291C5.58409 5.89717 5.8626 5.69394 5.98577 5.3965L7.71026 1.23228Z"
-                    fill="#FFE550"
-                  />
-                </svg>
-              </li>
-              <li>
-                <svg
-                  width="17"
-                  height="18"
-                  viewBox="0 0 17 18"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M7.71026 1.23228C8.00245 0.52674 8.99759 0.52674 9.28978 1.23228L11.0142 5.3965C11.1375 5.69394 11.416 5.89717 11.7357 5.92291L16.2118 6.28333C16.9702 6.34439 17.2777 7.29494 16.6999 7.79206L13.2896 10.7261C13.046 10.9357 12.9396 11.2645 13.014 11.5778L14.0559 15.9648C14.2324 16.7081 13.4274 17.2956 12.7781 16.8973L8.94588 14.5464C8.67215 14.3784 8.3279 14.3784 8.05418 14.5464L4.22195 16.8973C3.57265 17.2956 2.76757 16.7081 2.9441 15.9648L3.98602 11.5778C4.06044 11.2645 3.95406 10.9357 3.71048 10.7261L0.300104 7.79206C-0.277711 7.29494 0.0298077 6.34439 0.788199 6.28333L5.26436 5.92291C5.58409 5.89717 5.8626 5.69394 5.98577 5.3965L7.71026 1.23228Z"
-                    fill="#FFE550"
-                  />
-                </svg>
-              </li>
-              <li>
-                <svg
-                  width="17"
-                  height="18"
-                  viewBox="0 0 17 18"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M7.71026 1.23228C8.00245 0.52674 8.99759 0.52674 9.28978 1.23228L11.0142 5.3965C11.1375 5.69394 11.416 5.89717 11.7357 5.92291L16.2118 6.28333C16.9702 6.34439 17.2777 7.29494 16.6999 7.79206L13.2896 10.7261C13.046 10.9357 12.9396 11.2645 13.014 11.5778L14.0559 15.9648C14.2324 16.7081 13.4274 17.2956 12.7781 16.8973L8.94588 14.5464C8.67215 14.3784 8.3279 14.3784 8.05418 14.5464L4.22195 16.8973C3.57265 17.2956 2.76757 16.7081 2.9441 15.9648L3.98602 11.5778C4.06044 11.2645 3.95406 10.9357 3.71048 10.7261L0.300104 7.79206C-0.277711 7.29494 0.0298077 6.34439 0.788199 6.28333L5.26436 5.92291C5.58409 5.89717 5.8626 5.69394 5.98577 5.3965L7.71026 1.23228Z"
-                    fill="#FFE550"
-                  />
-                </svg>
-              </li>
-            </ul>
-            <p>
-              “The Best app I have used to order food in a while, so many
-              options to choose from too, I would recommend to a freind, No
-              questions asked”
-            </p>
-            <img
-              src="./images/reviews/man-image.jpg"
-              alt="man-image"
-              width="48"
-            />
-            <h3>Sumith Shah</h3>
-            <p>Some Dude</p>
-          </li>
-          <li>
-            <ul>
-              <li>
-                <svg
-                  width="17"
-                  height="18"
-                  viewBox="0 0 17 18"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M7.71026 1.23228C8.00245 0.52674 8.99759 0.52674 9.28978 1.23228L11.0142 5.3965C11.1375 5.69394 11.416 5.89717 11.7357 5.92291L16.2118 6.28333C16.9702 6.34439 17.2777 7.29494 16.6999 7.79206L13.2896 10.7261C13.046 10.9357 12.9396 11.2645 13.014 11.5778L14.0559 15.9648C14.2324 16.7081 13.4274 17.2956 12.7781 16.8973L8.94588 14.5464C8.67215 14.3784 8.3279 14.3784 8.05418 14.5464L4.22195 16.8973C3.57265 17.2956 2.76757 16.7081 2.9441 15.9648L3.98602 11.5778C4.06044 11.2645 3.95406 10.9357 3.71048 10.7261L0.300104 7.79206C-0.277711 7.29494 0.0298077 6.34439 0.788199 6.28333L5.26436 5.92291C5.58409 5.89717 5.8626 5.69394 5.98577 5.3965L7.71026 1.23228Z"
-                    fill="#FFE550"
-                  />
-                </svg>
-              </li>
-              <li>
-                <svg
-                  width="17"
-                  height="18"
-                  viewBox="0 0 17 18"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M7.71026 1.23228C8.00245 0.52674 8.99759 0.52674 9.28978 1.23228L11.0142 5.3965C11.1375 5.69394 11.416 5.89717 11.7357 5.92291L16.2118 6.28333C16.9702 6.34439 17.2777 7.29494 16.6999 7.79206L13.2896 10.7261C13.046 10.9357 12.9396 11.2645 13.014 11.5778L14.0559 15.9648C14.2324 16.7081 13.4274 17.2956 12.7781 16.8973L8.94588 14.5464C8.67215 14.3784 8.3279 14.3784 8.05418 14.5464L4.22195 16.8973C3.57265 17.2956 2.76757 16.7081 2.9441 15.9648L3.98602 11.5778C4.06044 11.2645 3.95406 10.9357 3.71048 10.7261L0.300104 7.79206C-0.277711 7.29494 0.0298077 6.34439 0.788199 6.28333L5.26436 5.92291C5.58409 5.89717 5.8626 5.69394 5.98577 5.3965L7.71026 1.23228Z"
-                    fill="#FFE550"
-                  />
-                </svg>
-              </li>
-              <li>
-                <svg
-                  width="17"
-                  height="18"
-                  viewBox="0 0 17 18"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M7.71026 1.23228C8.00245 0.52674 8.99759 0.52674 9.28978 1.23228L11.0142 5.3965C11.1375 5.69394 11.416 5.89717 11.7357 5.92291L16.2118 6.28333C16.9702 6.34439 17.2777 7.29494 16.6999 7.79206L13.2896 10.7261C13.046 10.9357 12.9396 11.2645 13.014 11.5778L14.0559 15.9648C14.2324 16.7081 13.4274 17.2956 12.7781 16.8973L8.94588 14.5464C8.67215 14.3784 8.3279 14.3784 8.05418 14.5464L4.22195 16.8973C3.57265 17.2956 2.76757 16.7081 2.9441 15.9648L3.98602 11.5778C4.06044 11.2645 3.95406 10.9357 3.71048 10.7261L0.300104 7.79206C-0.277711 7.29494 0.0298077 6.34439 0.788199 6.28333L5.26436 5.92291C5.58409 5.89717 5.8626 5.69394 5.98577 5.3965L7.71026 1.23228Z"
-                    fill="#FFE550"
-                  />
-                </svg>
-              </li>
-              <li>
-                <svg
-                  width="17"
-                  height="18"
-                  viewBox="0 0 17 18"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M7.71026 1.23228C8.00245 0.52674 8.99759 0.52674 9.28978 1.23228L11.0142 5.3965C11.1375 5.69394 11.416 5.89717 11.7357 5.92291L16.2118 6.28333C16.9702 6.34439 17.2777 7.29494 16.6999 7.79206L13.2896 10.7261C13.046 10.9357 12.9396 11.2645 13.014 11.5778L14.0559 15.9648C14.2324 16.7081 13.4274 17.2956 12.7781 16.8973L8.94588 14.5464C8.67215 14.3784 8.3279 14.3784 8.05418 14.5464L4.22195 16.8973C3.57265 17.2956 2.76757 16.7081 2.9441 15.9648L3.98602 11.5778C4.06044 11.2645 3.95406 10.9357 3.71048 10.7261L0.300104 7.79206C-0.277711 7.29494 0.0298077 6.34439 0.788199 6.28333L5.26436 5.92291C5.58409 5.89717 5.8626 5.69394 5.98577 5.3965L7.71026 1.23228Z"
-                    fill="#FFE550"
-                  />
-                </svg>
-              </li>
-            </ul>
-            <p>
-              “The ease with which I can just go in and order what i want was
-              amazing, It has been a very pleasant experience ordering from this
-              app”
-            </p>
-            <img
-              src="./images/reviews/girl-image.jpg"
-              alt="girl-image"
-              width="48"
-            />
-            <h3>Sumith Shah</h3>
-            <p>Some Dude</p>
-          </li>
-        </ul>
+      <section class="reviews">
+        <div class="container">
+          <h1 class="reviews-title">What our Customers Say</h1>
+          <p class="reviews-subtitle">
+            Don't just take our word for it - see what our satisfied customers
+            have to say
+          </p>
+          <ul class="reviews-list">
+            <li class="reviews-item">
+              <ul class="reviews-stars-list">
+                <li class="reviews-stars-item">
+                  <svg
+                    width="17"
+                    height="18"
+                    viewBox="0 0 17 18"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M7.71026 1.23228C8.00245 0.52674 8.99759 0.52674 9.28978 1.23228L11.0142 5.3965C11.1375 5.69394 11.416 5.89717 11.7357 5.92291L16.2118 6.28333C16.9702 6.34439 17.2777 7.29494 16.6999 7.79206L13.2896 10.7261C13.046 10.9357 12.9396 11.2645 13.014 11.5778L14.0559 15.9648C14.2324 16.7081 13.4274 17.2956 12.7781 16.8973L8.94588 14.5464C8.67215 14.3784 8.3279 14.3784 8.05418 14.5464L4.22195 16.8973C3.57265 17.2956 2.76757 16.7081 2.9441 15.9648L3.98602 11.5778C4.06044 11.2645 3.95406 10.9357 3.71048 10.7261L0.300104 7.79206C-0.277711 7.29494 0.0298077 6.34439 0.788199 6.28333L5.26436 5.92291C5.58409 5.89717 5.8626 5.69394 5.98577 5.3965L7.71026 1.23228Z"
+                      fill="#FFE550"
+                    />
+                  </svg>
+                </li>
+                <li class="reviews-stars-item">
+                  <svg
+                    width="17"
+                    height="18"
+                    viewBox="0 0 17 18"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M7.71026 1.23228C8.00245 0.52674 8.99759 0.52674 9.28978 1.23228L11.0142 5.3965C11.1375 5.69394 11.416 5.89717 11.7357 5.92291L16.2118 6.28333C16.9702 6.34439 17.2777 7.29494 16.6999 7.79206L13.2896 10.7261C13.046 10.9357 12.9396 11.2645 13.014 11.5778L14.0559 15.9648C14.2324 16.7081 13.4274 17.2956 12.7781 16.8973L8.94588 14.5464C8.67215 14.3784 8.3279 14.3784 8.05418 14.5464L4.22195 16.8973C3.57265 17.2956 2.76757 16.7081 2.9441 15.9648L3.98602 11.5778C4.06044 11.2645 3.95406 10.9357 3.71048 10.7261L0.300104 7.79206C-0.277711 7.29494 0.0298077 6.34439 0.788199 6.28333L5.26436 5.92291C5.58409 5.89717 5.8626 5.69394 5.98577 5.3965L7.71026 1.23228Z"
+                      fill="#FFE550"
+                    />
+                  </svg>
+                </li>
+                <li class="reviews-stars-item">
+                  <svg
+                    width="17"
+                    height="18"
+                    viewBox="0 0 17 18"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M7.71026 1.23228C8.00245 0.52674 8.99759 0.52674 9.28978 1.23228L11.0142 5.3965C11.1375 5.69394 11.416 5.89717 11.7357 5.92291L16.2118 6.28333C16.9702 6.34439 17.2777 7.29494 16.6999 7.79206L13.2896 10.7261C13.046 10.9357 12.9396 11.2645 13.014 11.5778L14.0559 15.9648C14.2324 16.7081 13.4274 17.2956 12.7781 16.8973L8.94588 14.5464C8.67215 14.3784 8.3279 14.3784 8.05418 14.5464L4.22195 16.8973C3.57265 17.2956 2.76757 16.7081 2.9441 15.9648L3.98602 11.5778C4.06044 11.2645 3.95406 10.9357 3.71048 10.7261L0.300104 7.79206C-0.277711 7.29494 0.0298077 6.34439 0.788199 6.28333L5.26436 5.92291C5.58409 5.89717 5.8626 5.69394 5.98577 5.3965L7.71026 1.23228Z"
+                      fill="#FFE550"
+                    />
+                  </svg>
+                </li>
+                <li class="reviews-stars-item">
+                  <svg
+                    width="17"
+                    height="18"
+                    viewBox="0 0 17 18"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M7.71026 1.23228C8.00245 0.52674 8.99759 0.52674 9.28978 1.23228L11.0142 5.3965C11.1375 5.69394 11.416 5.89717 11.7357 5.92291L16.2118 6.28333C16.9702 6.34439 17.2777 7.29494 16.6999 7.79206L13.2896 10.7261C13.046 10.9357 12.9396 11.2645 13.014 11.5778L14.0559 15.9648C14.2324 16.7081 13.4274 17.2956 12.7781 16.8973L8.94588 14.5464C8.67215 14.3784 8.3279 14.3784 8.05418 14.5464L4.22195 16.8973C3.57265 17.2956 2.76757 16.7081 2.9441 15.9648L3.98602 11.5778C4.06044 11.2645 3.95406 10.9357 3.71048 10.7261L0.300104 7.79206C-0.277711 7.29494 0.0298077 6.34439 0.788199 6.28333L5.26436 5.92291C5.58409 5.89717 5.8626 5.69394 5.98577 5.3965L7.71026 1.23228Z"
+                      fill="#FFE550"
+                    />
+                  </svg>
+                </li>
+              </ul>
+              <p class="reviews-item-text">
+                “The Best app I have used to order food in a while, so many
+                options to choose from too, I would recommend to a freind, No
+                questions asked”
+              </p>
+              <div class="reviews-info-container">
+                <img
+                  class="reviews-item-img"
+                  src="./images/reviews/man-image.jpg"
+                  alt="man-image"
+                  width="48"
+                />
+                <div class="reviews-text-container">
+                  <h2 class="reviews-item-title">Sumith Shah</h2>
+                  <p class="reviews-item-name">Some Dude</p>
+                </div>
+              </div>
+            </li>
+            <li class="reviews-item">
+              <ul class="reviews-stars-list">
+                <li class="reviews-stars-item">
+                  <svg
+                    width="17"
+                    height="18"
+                    viewBox="0 0 17 18"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M7.71026 1.23228C8.00245 0.52674 8.99759 0.52674 9.28978 1.23228L11.0142 5.3965C11.1375 5.69394 11.416 5.89717 11.7357 5.92291L16.2118 6.28333C16.9702 6.34439 17.2777 7.29494 16.6999 7.79206L13.2896 10.7261C13.046 10.9357 12.9396 11.2645 13.014 11.5778L14.0559 15.9648C14.2324 16.7081 13.4274 17.2956 12.7781 16.8973L8.94588 14.5464C8.67215 14.3784 8.3279 14.3784 8.05418 14.5464L4.22195 16.8973C3.57265 17.2956 2.76757 16.7081 2.9441 15.9648L3.98602 11.5778C4.06044 11.2645 3.95406 10.9357 3.71048 10.7261L0.300104 7.79206C-0.277711 7.29494 0.0298077 6.34439 0.788199 6.28333L5.26436 5.92291C5.58409 5.89717 5.8626 5.69394 5.98577 5.3965L7.71026 1.23228Z"
+                      fill="#FFE550"
+                    />
+                  </svg>
+                </li>
+                <li class="reviews-stars-item">
+                  <svg
+                    width="17"
+                    height="18"
+                    viewBox="0 0 17 18"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M7.71026 1.23228C8.00245 0.52674 8.99759 0.52674 9.28978 1.23228L11.0142 5.3965C11.1375 5.69394 11.416 5.89717 11.7357 5.92291L16.2118 6.28333C16.9702 6.34439 17.2777 7.29494 16.6999 7.79206L13.2896 10.7261C13.046 10.9357 12.9396 11.2645 13.014 11.5778L14.0559 15.9648C14.2324 16.7081 13.4274 17.2956 12.7781 16.8973L8.94588 14.5464C8.67215 14.3784 8.3279 14.3784 8.05418 14.5464L4.22195 16.8973C3.57265 17.2956 2.76757 16.7081 2.9441 15.9648L3.98602 11.5778C4.06044 11.2645 3.95406 10.9357 3.71048 10.7261L0.300104 7.79206C-0.277711 7.29494 0.0298077 6.34439 0.788199 6.28333L5.26436 5.92291C5.58409 5.89717 5.8626 5.69394 5.98577 5.3965L7.71026 1.23228Z"
+                      fill="#FFE550"
+                    />
+                  </svg>
+                </li>
+                <li class="reviews-stars-item">
+                  <svg
+                    width="17"
+                    height="18"
+                    viewBox="0 0 17 18"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M7.71026 1.23228C8.00245 0.52674 8.99759 0.52674 9.28978 1.23228L11.0142 5.3965C11.1375 5.69394 11.416 5.89717 11.7357 5.92291L16.2118 6.28333C16.9702 6.34439 17.2777 7.29494 16.6999 7.79206L13.2896 10.7261C13.046 10.9357 12.9396 11.2645 13.014 11.5778L14.0559 15.9648C14.2324 16.7081 13.4274 17.2956 12.7781 16.8973L8.94588 14.5464C8.67215 14.3784 8.3279 14.3784 8.05418 14.5464L4.22195 16.8973C3.57265 17.2956 2.76757 16.7081 2.9441 15.9648L3.98602 11.5778C4.06044 11.2645 3.95406 10.9357 3.71048 10.7261L0.300104 7.79206C-0.277711 7.29494 0.0298077 6.34439 0.788199 6.28333L5.26436 5.92291C5.58409 5.89717 5.8626 5.69394 5.98577 5.3965L7.71026 1.23228Z"
+                      fill="#FFE550"
+                    />
+                  </svg>
+                </li>
+                <li class="reviews-stars-item">
+                  <svg
+                    width="17"
+                    height="18"
+                    viewBox="0 0 17 18"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M7.71026 1.23228C8.00245 0.52674 8.99759 0.52674 9.28978 1.23228L11.0142 5.3965C11.1375 5.69394 11.416 5.89717 11.7357 5.92291L16.2118 6.28333C16.9702 6.34439 17.2777 7.29494 16.6999 7.79206L13.2896 10.7261C13.046 10.9357 12.9396 11.2645 13.014 11.5778L14.0559 15.9648C14.2324 16.7081 13.4274 17.2956 12.7781 16.8973L8.94588 14.5464C8.67215 14.3784 8.3279 14.3784 8.05418 14.5464L4.22195 16.8973C3.57265 17.2956 2.76757 16.7081 2.9441 15.9648L3.98602 11.5778C4.06044 11.2645 3.95406 10.9357 3.71048 10.7261L0.300104 7.79206C-0.277711 7.29494 0.0298077 6.34439 0.788199 6.28333L5.26436 5.92291C5.58409 5.89717 5.8626 5.69394 5.98577 5.3965L7.71026 1.23228Z"
+                      fill="#FFE550"
+                    />
+                  </svg>
+                </li>
+              </ul>
+              <p class="reviews-item-text">
+                “The ease with which I can just go in and order what i want was
+                amazing, It has been a very pleasant experience ordering from
+                this app”
+              </p>
+              <div class="reviews-info-container">
+                <img
+                  class="reviews-item-img"
+                  src="./images/reviews/girl-image.jpg"
+                  alt="girl-image"
+                  width="48"
+                />
+                <div class="reviews-text-container">
+                  <h2 class="reviews-item-title">Sumith Shah</h2>
+                  <p class="reviews-item-name">Some Dude</p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
-    <footer>
-      <a href="">
-        <img
-          src="./images/logo.svg"
-          alt="Logo of our site"
-          width="66"
-          height="52"
-        />
-      </a>
-      <ul>
-        <li>
-          <a href="">Home</a>
-        </li>
-        <li>
-          <a href="">Customers</a>
-        </li>
-        <li>
-          <a href="">About</a>
-        </li>
-        <li>
-          <a href="">Service</a>
-        </li>
-        <li>
-          <a href="">Menu</a>
-        </li>
-        <li>
-          <a href="">Contact</a>
-        </li>
-      </ul>
-      <p>Subscribe</p>
-      <form>
-        <label>
-          <input type="email" name="email" placeholder="Enter your email" />
-        </label>
-        <button type="submit">Subscribe</button>
-      </form>
-      <p>
-        By subscribing you agree to with our
-        <a href="">Privacy Policy</a>
-      </p>
-      <ul>
-        <li>
-          <a href="">Privacy Policy</a>
-        </li>
-        <li>
-          <a href="">Terms of Service</a>
-        </li>
-        <li>
-          <a href="">Cookies Settings</a>
-        </li>
-      </ul>
-      <p>2022 FoodSta. All right reserved.</p>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-up-wrapper">
+          <a href="" class="logo logo-footer">
+            <img
+              class="footer-image"
+              src="./images/logo.svg"
+              alt="Logo of our site"
+              width="66"
+              height="52"
+            />
+          </a>
+          <ul class="nav-list footer-nav-list">
+            <li class="nav-item">
+              <a href="" class="nav-link footer-nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="./customers.html" class="nav-link footer-nav-link"
+                >Customers</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="" class="nav-link footer-nav-link">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="" class="nav-link footer-nav-link">Service</a>
+            </li>
+            <li class="nav-item">
+              <a href="" class="nav-link footer-nav-link">Menu</a>
+            </li>
+            <li class="nav-item">
+              <a href="" class="nav-link footer-nav-link"> Contact</a>
+            </li>
+          </ul>
+          <div class="form-container">
+            <p class="form-title">Subscribe</p>
+            <form class="form footer-form">
+              <label class="form-label">
+                <input
+                  class="form-input footer-form-input"
+                  type="email"
+                  name="email"
+                  placeholder="Enter your email"
+                />
+              </label>
+              <button type="submit" class="form-btn footer-form-btn btn">
+                Subscribe
+              </button>
+            </form>
+            <p class="form-policy">
+              By subscribing you agree to with our
+              <a class="form-policy-link" href="">Privacy Policy</a>
+            </p>
+          </div>
+        </div>
+        <div class="footer-down-wrapper">
+          <ul class="policy-list">
+            <li class="policy-item">
+              <a class="policy-link" href="">Privacy Policy</a>
+            </li>
+            <li class="policy-item">
+              <a class="policy-link" href="">Terms of Service</a>
+            </li>
+            <li class="policy-item">
+              <a class="policy-link" href="">Cookies Settings</a>
+            </li>
+          </ul>
+          <p class="footer-copyright">2022 FoodSta. All right reserved.</p>
+        </div>
+      </div>
     </footer>
   </body>
 </html>
