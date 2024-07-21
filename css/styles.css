@@ -70,9 +70,6 @@
   color: #bbf330;
 }
 
-.customers-current {
-  display: none;
-}
 /* ----------------------------- Hero */
 .hero {
   padding-top: 14px;
@@ -316,6 +313,10 @@
   padding-bottom: 100px;
   box-shadow: 0 -4px 24px 0 rgba(105, 105, 105, 0.1);
   background-color: #fefefe;
+  background-image: url("../images/footer-bcg.png");
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: 1211px;
 }
 
 .logo-footer {
