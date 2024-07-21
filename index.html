@@ -11,14 +11,15 @@
       rel="stylesheet"
     />
     <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
-      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
     <link rel="icon" type="image/png" sizes="66x52" href="./images/logo.svg" />
     <link rel="stylesheet" href="./css/resets.css" />
+    <link rel="stylesheet" href="./css/modal.css" />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
@@ -70,10 +71,12 @@
               enjoy a hassle-free and delicious meal from the comfort of your
               own home.
             </p>
-            <button type="button" class="hero-btn btn">Order Now</button>
+            <button type="button" class="hero-btn btn" data-modal-open>
+              Order Now
+            </button>
           </div>
           <img
-            class="hero-image"
+            class="hero-img"
             src="./images/hero.png"
             alt="hero image"
             width="528"
@@ -83,12 +86,16 @@
       <!-- About -->
       <section class="about">
         <div class="container about-container">
-          <img
-            class="about-image"
-            src="./images/apple.png"
-            alt="section image"
-            width="396"
-          />
+          <div class="about-image-container">
+            <div class="about-image-wrapper">
+              <img
+                class="about-image"
+                src="./images/apple.png"
+                alt="section image"
+                width="396"
+              />
+            </div>
+          </div>
           <div class="about-wrapper">
             <h2 class="about-title title">
               What’s Special About Our Offerings
@@ -202,9 +209,12 @@
                   type="email"
                   name="email"
                   placeholder="Enter your email"
+                  required
                 />
               </label>
-              <button type="submit" class="subscribe-form-btn btn">Subscribe</button>
+              <button type="submit" class="subscribe-form-btn btn">
+                Subscribe
+              </button>
             </form>
           </div>
           <img
@@ -259,9 +269,13 @@
                   type="email"
                   name="email"
                   placeholder="Enter your email"
+                  required
                 />
               </label>
-              <button type="submit" class="subscribe-form-btn footer-form-btn btn">
+              <button
+                type="submit"
+                class="subscribe-form-btn footer-form-btn btn"
+              >
                 Subscribe
               </button>
             </form>
@@ -287,10 +301,51 @@
         </div>
       </div>
     </footer>
-    <div class="backdrop">
+    <div class="backdrop" data-modal>
       <div class="modal">
-        <form class="form"</form>
+        <button type="button" class="modal-btn-close" data-modal-close>
+          <svg class="modal-icon-close" width="12" height="12">
+            <use href="./icons/icons.svg#icon-menu-close"></use>
+          </svg>
+        </button>
+        <p class="modal-title">Order Form</p>
+        <form class="form">
+          <ul class="form-list">
+            <li class="form-item">
+              <label for="user-name" class="form-label">Name</label
+              ><input
+                type="text"
+                class="form-input"
+                id="user-name"
+                name="user-name"
+                placeholder="Your name"
+              />
+            </li>
+            <li class="form-item">
+              <label for="user-tel" class="form-label">Phone number</label
+              ><input
+                type="tel"
+                class="form-input"
+                id="user-tel"
+                name="user-tel"
+                placeholder="+38(0_ _) _ _ _   _ _   _ _"
+              />
+            </li>
+            <li class="form-item">
+              <label for="user-email" class="form-label">E-mail</label
+              ><input
+                type="email"
+                class="form-input"
+                id="user-email"
+                name="user-email"
+                placeholder="example@gmail.com"
+              />
+            </li>
+          </ul>
+          <button class="modal-submit-btn" type="submit">Send</button>
+        </form>
       </div>
     </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>

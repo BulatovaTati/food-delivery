@@ -67,8 +67,6 @@
 
 .nav-link:hover,
 .nav-link:focus {
-  font-weight: 700;
-  text-decoration: underline;
   color: #bbf330;
 }
 
@@ -102,6 +100,10 @@
   font-size: 16px;
 }
 
+.hero-img {
+  border-radius: 50%;
+  border: 26px solid #ffe550;
+}
 /* --------------------------- About */
 .about {
   padding-top: 113px;
@@ -119,8 +121,38 @@
   max-width: 573px;
 }
 
-.about-image {
+.about-image-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 550px;
+  height: 550px;
+  border: 5px solid rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+}
+
+.about-image-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: #fefefe;
+  width: 502px;
+  height: 502px;
+}
+
+.about-image {
+  position: relative;
+  margin-top: -150px;
+}
+
+.about-image::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 252px;
+  height: 87px;
+  /* background-image: url("../icons/icons.svg#icon-shadow"); */
 }
 
 .about-title {
@@ -211,76 +243,16 @@
 }
 
 .favorites-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   width: calc((100% - 64px) / 3);
+  border: 16px solid #ffe550;
+  border-radius: 50%;
+  height: 397px;
 }
 
-.favorites-img {
-  margin-right: auto;
-  margin-left: auto;
-}
-
-/* -------------------- reviews */
-.reviews {
-  padding-top: 140px;
-  padding-bottom: 126px;
-  background-color: rgba(255, 229, 80, 0.2);
-}
-
-.reviews-title {
-  margin-bottom: 20px;
-  font-size: 42px;
-}
-
-.reviews-subtitle {
-  margin-bottom: 33px;
-  font-size: 16px;
-}
-
-.reviews-list {
-  display: flex;
-  align-items: center;
-  gap: 139px;
-}
-
-.reviews-item {
-  padding: 14px 15px;
-  background-color: #fefefe;
-  border-radius: 0 30px 30px 30px;
-}
-
-.reviews-stars-list {
-  display: flex;
-  margin-bottom: 29px;
-}
-
-.reviews-stars-icon {
-  fill: #ffe550;
-}
-
-.reviews-item-text {
-  margin-bottom: 41px;
-  font-weight: 700;
-  font-size: 18px;
-}
-
-.reviews-info-container {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-}
-
-.reviews-item-title {
-  margin-bottom: 2px;
-}
-
-.reviews-info-container::after {
-  content: "";
-  display: block;
-  height: 52px;
-  border-right: 1px solid #7eb101;
-}
-
-/* ------------------------subscribe */
 .subscribe {
   padding-top: 176px;
   padding-bottom: 201px;
