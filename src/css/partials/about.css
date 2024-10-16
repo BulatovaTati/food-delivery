@@ -1,27 +1,18 @@
 .about {
-  padding-top: 113px;
-  padding-bottom: 124px;
   background-color: #ffe550;
-}
-
-.about-container {
-  display: flex;
-  align-items: center;
-  gap: 90px;
-}
-
-.about-wrapper {
-  max-width: 573px;
+  padding-top: 91px;
+  padding-bottom: 91px;
 }
 
 .about-image-container {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 550px;
-  height: 550px;
+  margin-bottom: 60px;
   border: 5px solid rgba(255, 255, 255, 0.5);
   border-radius: 50%;
+  width: 280px;
+  height: 280px;
 }
 
 .about-image-wrapper {
@@ -30,43 +21,26 @@
   justify-content: center;
   border-radius: 50%;
   background-color: #fefefe;
-  width: 502px;
-  height: 502px;
+  width: 255px;
+  height: 255px;
 }
 
 .about-image {
-  position: relative;
-  margin-top: -150px;
-}
-
-.about-image::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  width: 252px;
-  height: 87px;
-  /* background-image: url("../icons/icons.svg#icon-shadow"); */
+  margin-top: -30px;
+  width: 201px;
+  height: 255px;
 }
 
 .about-title {
-  margin-bottom: 20px;
-  font-size: 42px;
-  line-height: 1.2;
+  margin-bottom: 28px;
+  font-size: 28px;
 }
 
 .about-text {
-  max-width: 500px;
-  margin-bottom: 40px;
-  font-size: 16px;
-}
-
-.about-list {
-  display: flex;
-  gap: 67px;
-}
-
-.about-item {
-  max-width: 253px;
+  margin-bottom: 28px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.43;
 }
 
 .icon-wrapper {
@@ -80,6 +54,14 @@
   background-color: #fefefe;
 }
 
+.about-list {
+  margin-bottom: 24px;
+}
+
+.about-item:not(:last-child) {
+  margin-bottom: 24px;
+}
+
 .about-icon {
   fill: #7eb101;
 }
@@ -87,15 +69,26 @@
 .about-item-title {
   margin-bottom: 16px;
   font-size: 18px;
-  line-height: 1.4;
 }
 
 .about-item-text {
-  margin-bottom: 32px;
+  font-size: 14px;
+  line-height: 1.43;
+}
+
+.btn-container {
+  display: flex;
+  align-items: baseline;
+  gap: 24px;
 }
 
 .about-btn {
+  font-family: inherit;
   min-width: 106px;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 1.5;
+  color: #2c2c2c;
   height: 40px;
   padding: 10px 20px;
   background-color: #fff;
@@ -109,4 +102,138 @@
   background-color: #bbf330;
   outline: none;
   border-color: transparent;
+}
+
+.read-more {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 83px;
+  padding: 6px 0px;
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 1.5;
+  color: #000;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+  .about {
+    padding-top: 118px;
+    padding-bottom: 118px;
+  }
+
+  .about-title {
+    max-width: 526px;
+    margin-bottom: 20px;
+    font-size: 42px;
+  }
+
+  .about-text {
+    max-width: 500px;
+    margin-bottom: 25px;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .about-list {
+    display: flex;
+    gap: 80px;
+    margin-bottom: 40px;
+  }
+
+  .about-item {
+    max-width: 253px;
+  }
+
+  .about-item:not(:last-child) {
+    margin-bottom: 0;
+  }
+
+  .about-image {
+    width: 257px;
+    height: 325px;
+  }
+
+  .about-image-container {
+    width: 357px;
+    height: 357px;
+    border: 5px solid rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+  }
+
+  .about-image-wrapper {
+    border-radius: 50%;
+    background-color: #fefefe;
+    width: 325px;
+    height: 325px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .about {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+
+  .about-container {
+    display: flex;
+    align-items: center;
+    gap: 90px;
+  }
+
+  .about-wrapper {
+    max-width: 573px;
+  }
+
+  .about-image-container {
+    justify-content: center;
+    width: 550px;
+    height: 550px;
+  }
+
+  .about-image-wrapper {
+    width: 502px;
+    height: 502px;
+  }
+
+  .about-image {
+    margin-top: -45px;
+    width: 396px;
+    height: 502px;
+  }
+
+  .about-image::after {
+    top: 0;
+    width: 252px;
+    height: 87px;
+  }
+
+  .about-title {
+    line-height: 1.2;
+  }
+
+  .about-text {
+    margin-bottom: 40px;
+  }
+
+  .about-container {
+    gap: 67px;
+  }
+
+  .about-list {
+    margin-bottom: 32px;
+  }
+
+  .read-more {
+    display: none;
+  }
+
+  .about-item-text {
+    line-height: 1.5;
+  }
 }
