@@ -1,0 +1,45 @@
+<div class="backdrop" data-modal>
+  <div class="modal">
+    <button type="button" class="modal-btn-close" data-modal-close>
+      <svg class="modal-icon-close" width="12" height="12">
+        <use href="./icons/icons.svg#icon-menu-close"></use>
+      </svg>
+    </button>
+    <p class="modal-title">Order Form</p>
+    <form class="form">
+      <ul class="form-list">
+        <li class="form-item">
+          <label for="user-name" class="form-label">Name</label
+          ><input
+            type="text"
+            class="form-input"
+            id="user-name"
+            name="user-name"
+            placeholder="Your name"
+          />
+        </li>
+        <li class="form-item">
+          <label for="user-tel" class="form-label">Phone number</label
+          ><input
+            type="tel"
+            class="form-input"
+            id="user-tel"
+            name="user-tel"
+            placeholder="+38(0_ _) _ _ _   _ _   _ _"
+          />
+        </li>
+        <li class="form-item">
+          <label for="user-email" class="form-label">E-mail</label
+          ><input
+            type="email"
+            class="form-input"
+            id="user-email"
+            name="user-email"
+            placeholder="example@gmail.com"
+          />
+        </li>
+      </ul>
+      <button class="modal-submit-btn" type="submit">Send</button>
+    </form>
+  </div>
+</div>

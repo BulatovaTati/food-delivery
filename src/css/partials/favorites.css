@@ -1,0 +1,33 @@
+.favorites {
+  padding-top: 120px;
+  padding-bottom: 101px;
+}
+
+.favorites-title {
+  margin-bottom: 20px;
+  font-size: 42px;
+  text-align: center;
+}
+
+.favorites-text {
+  margin-bottom: 40px;
+  font-size: 16px;
+  text-align: center;
+}
+
+.favorites-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+}
+
+.favorites-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: calc((100% - 64px) / 3);
+  border: 16px solid #ffe550;
+  border-radius: 50%;
+  height: 397px;
+}
