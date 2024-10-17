@@ -1,6 +1,6 @@
 .favorites {
-  padding-top: 120px;
-  padding-bottom: 101px;
+  padding-top: 135px;
+  padding-bottom: 120px;
 }
 
 .favorites-title {
@@ -52,6 +52,10 @@
 }
 
 @media screen and (min-width: 1280px) {
+  .favorites {
+    padding-top: 120px;
+    padding-bottom: 101px;
+  }
   .favorites-item {
     width: calc((100% - 64px) / 3);
     height: 397px;
