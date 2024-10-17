@@ -5,20 +5,20 @@
 
 .favorites-title {
   margin-bottom: 20px;
-  font-size: 42px;
+  font-size: 28px;
   text-align: center;
 }
 
 .favorites-text {
-  margin-bottom: 40px;
-  font-size: 16px;
+  margin-bottom: 60px;
+  font-size: 14px;
   text-align: center;
 }
 
 .favorites-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 32px;
+  gap: 20px;
 }
 
 .favorites-item {
@@ -26,8 +26,34 @@
   align-items: center;
   justify-content: center;
 
-  width: calc((100% - 64px) / 3);
+  width: 100%;
   border: 16px solid #ffe550;
   border-radius: 50%;
-  height: 397px;
+}
+
+@media screen and (min-width: 768px) {
+  .favorites-title {
+    font-size: 42px;
+  }
+
+  .favorites-text {
+    margin-bottom: 40px;
+    font-size: 16px;
+  }
+
+  .favorites-list {
+    gap: 32px;
+  }
+
+  .favorites-item {
+    width: calc((100% - 32px) / 2);
+    height: 338px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .favorites-item {
+    width: calc((100% - 64px) / 3);
+    height: 397px;
+  }
 }
