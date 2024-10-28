@@ -1,0 +1,81 @@
+.burger {
+  position: relative;
+  top: 0;
+  left: 0;
+
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+
+  overflow: hidden;
+  background-color: transparent;
+  z-index: 997;
+  cursor: pointer;
+  transition: transform 250ms ease, background-color 250ms ease;
+}
+
+.burger::after {
+  content: '';
+  position: absolute;
+  top: 12px;
+  left: 8px;
+
+  width: 24px;
+  height: 2px;
+  background-color: #7eb101;
+
+  border-radius: 4px;
+}
+
+.burger::before {
+  content: '';
+  position: absolute;
+  bottom: 12px;
+  left: 8px;
+
+  width: 24px;
+  height: 2px;
+  background-color: #7eb101;
+  border-radius: 4px;
+}
+
+@media screen and (min-width: 768px) {
+  .burger {
+    display: none;
+  }
+}
+
+.burger-icon {
+  position: absolute;
+  top: 19px;
+  left: 8px;
+
+  width: 24px;
+  height: 2px;
+  background-color: #7eb101;
+
+  border-radius: 4px;
+
+  transition: transform 250ms ease, background-color 250ms ease;
+}
+
+.burger.is-open .burger-icon {
+  background-color: #7eb101;
+  transform: translateX(150%);
+}
+
+.burger.is-open::after {
+  background-color: #7eb101;
+  transform: translateY(7px) rotate(-45deg);
+}
+
+.burger.is-open::before {
+  background-color: #7eb101;
+  transform: translateY(-7px) rotate(45deg);
+}
+
+.burger.is-open ~ .navigation {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
