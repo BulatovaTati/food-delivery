@@ -19,48 +19,53 @@
     />
     <link rel="icon" type="image/png" sizes="66x52" href="/food-delivery/assets/logo-CXd7rZ-0.svg" />
     <script type="module" crossorigin src="/food-delivery/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/food-delivery/assets/index-DXkhhrqU.css">
+    <link rel="stylesheet" crossorigin href="/food-delivery/assets/index-C30vvsoJ.css">
   </head>
   <body>
-    <!-- <header class="header">
+    <header class="header" id="home">
   <div class="container header-container">
     <a href="" class="logo">
       <img
         class="logo-image"
-        src="./images/logo.svg"
+        src="/food-delivery/assets/logo-CXd7rZ-0.svg"
         alt="Logo of our site"
         width="66"
         height="52"
       />
     </a>
+    <div class="burger js-menu js-menu-close" data-menu-button>
+      <span class="burger-icon"></span>
+    </div>
     <nav class="navigation">
-      <ul class="nav-list">
-        <li class="nav-item">
-          <a href="" class="nav-link current">Home</a>
-        </li>
-        <li class="nav-item">
-          <a href="" class="nav-link">Customers</a>
-        </li>
-        <li class="nav-item">
-          <a href="" class="nav-link">About</a>
-        </li>
-        <li class="nav-item">
-          <a href="" class="nav-link">Service</a>
-        </li>
-        <li class="nav-item">
-          <a href="" class="nav-link">Menu</a>
-        </li>
-        <li class="nav-item">
-          <a href="" class="nav-link"> Contact</a>
-        </li>
-      </ul>
-    </nav>
-    <button type="button" class="header-button btn" data-modal-open>
+  <ul class="nav-list">
+    <li class="nav-item">
+      <a href="#home" class="nav-link current">Home</a>
+    </li>
+    <li class="nav-item">
+      <a href="#customers" class="nav-link">Customers</a>
+    </li>
+    <li class="nav-item">
+      <a href="#about" class="nav-link">About</a>
+    </li>
+    <li class="nav-item">
+      <a href="#service" class="nav-link">Service</a>
+    </li>
+    <li class="nav-item">
+      <a href="#menu" class="nav-link">Menu</a>
+    </li>
+    <li class="nav-item">
+      <a href="#contact" class="nav-link">Contact</a>
+    </li>
+  </ul>
+</nav>
+
+
+    <button type="button" class="header-button btn" data-modal="1">
       Order Now
     </button>
   </div>
 </header>
- -->
+
     <main>
       <section class="hero">
   <div class="container hero-container">
@@ -78,7 +83,7 @@
   </div>
 </section>
 
-      <section class="about">
+      <section class="about" id="about">
   <div class="container about-container">
     <div class="about-image-container">
       <div class="about-image-wrapper">
@@ -137,7 +142,7 @@
   </div>
 </section>
 
-      <section class="favorites">
+      <section class="favorites" id="menu">
   <div class="container">
     <h1 class="favorites-title">Some of Our Favorites</h1>
     <p class="favorites-text">Looking for something delicious?</p>
@@ -194,7 +199,7 @@
   </div>
 </section>
 
-      <section class="reviews">
+      <section class="reviews" id="customers">
   <div class="container">
     <h1 class="reviews-title">What our Customers Say</h1>
     <p class="reviews-subtitle">
@@ -287,7 +292,7 @@
   </div>
 </section>
 
-      <section class="subscribe">
+      <section class="subscribe" id="contact">
   <div class="container subscribe-container">
     <img
       class="subscribe-image"
@@ -318,7 +323,7 @@
 </section>
 
     </main>
-    <footer class="footer">
+    <footer class="footer" id="service">
   <div class="container">
     <div class="footer-up-wrapper">
       <div class="foooter-up-container">
@@ -392,6 +397,7 @@
     </div>
   </div>
 </footer>
+
 
   </body>
 </html>
