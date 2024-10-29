@@ -46,7 +46,7 @@
 
   width: 100vw;
   height: 100vh;
-
+  text-align: center;
   background-color: #ffe550;
 
   transform: translateY(-150%);
