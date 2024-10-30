@@ -11,7 +11,7 @@
 
   color: #2c2c2c;
   background-color: #bbf330;
-
+  outline: transparent;
   cursor: pointer;
   transition: background-color 250ms ease, outline 250ms ease;
 }

@@ -119,11 +119,22 @@
   border: none;
   background-color: transparent;
   cursor: pointer;
+  transition: text-shadow 250ms ease;
 }
 
 .read-more:hover,
 .read-more:focus {
   text-shadow: 1px 0 2px #bbf330;
+}
+
+.read-more-icon {
+  fill: currentColor;
+  transition: fill 250ms ease;
+}
+
+.read-more:hover .read-more-icon,
+.read-more:focus .read-more-icon {
+  fill: #bbf330;
 }
 
 @media screen and (min-width: 768px) {
