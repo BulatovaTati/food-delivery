@@ -19,7 +19,7 @@
     />
     <link rel="icon" type="image/png" sizes="66x52" href="/food-delivery/assets/logo-CXd7rZ-0.svg" />
     <script type="module" crossorigin src="/food-delivery/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/food-delivery/assets/index-sbXe_Bzg.css">
+    <link rel="stylesheet" crossorigin href="/food-delivery/assets/index-BSp5VJz_.css">
   </head>
   <body>
     <header class="header" id="home">
@@ -60,7 +60,11 @@
 </nav>
 
 
-    <button type="button" class="header-button btn" data-modal="1">
+    <button
+      type="button"
+      class="header-button btn js-open-modal"
+      data-modal="1"
+    >
       Order Now
     </button>
   </div>
@@ -76,7 +80,7 @@
         straight to your doorstep, no matter where you are. Order now and enjoy
         a hassle-free and delicious meal from the comfort of your own home.
       </p>
-      <button type="button" class="hero-btn btn" data-modal-open>
+      <button type="button" class="hero-btn btn js-open-modal" data-modal="1">
         Order Now
       </button>
     </div>
@@ -106,7 +110,7 @@
         <li class="about-item">
           <div class="icon-wrapper">
             <svg class="about-icon" width="32" height="32">
-              <use href="/food-delivery/assets/icons-CS671kEZ.svg#icon-rocket"></use>
+              <use href="/food-delivery/assets/icons-CCwf-RbL.svg#icon-rocket"></use>
             </svg>
           </div>
           <h3 class="about-item-title">Fasest Delivery</h3>
@@ -118,7 +122,7 @@
         <li class="about-item">
           <div class="icon-wrapper">
             <svg class="about-icon" width="32" height="32">
-              <use href="/food-delivery/assets/icons-CS671kEZ.svg#icon-touch"></use>
+              <use href="/food-delivery/assets/icons-CCwf-RbL.svg#icon-touch"></use>
             </svg>
           </div>
           <h3 class="about-item-title">Easy To Order</h3>
@@ -134,7 +138,7 @@
         <button type="button" class="read-more">
           Read More
           <svg class="read-more-icon" width="15" height="14">
-            <use href="./icons/arrow-right.svg"></use>
+            <use href="/food-delivery/assets/icons-CCwf-RbL.svg#icon-arrow"></use>
           </svg>
         </button>
       </div>
@@ -211,22 +215,22 @@
         <ul class="reviews-stars-list">
           <li class="reviews-stars-item">
             <svg class="reviews-stars-icon" width="17" height="18">
-              <use href="/food-delivery/assets/icons-CS671kEZ.svg#icon-star"></use>
+              <use href="/food-delivery/assets/icons-CCwf-RbL.svg#icon-star"></use>
             </svg>
           </li>
           <li class="reviews-stars-item">
             <svg class="reviews-stars-icon" width="17" height="18">
-              <use href="/food-delivery/assets/icons-CS671kEZ.svg#icon-star"></use>
+              <use href="/food-delivery/assets/icons-CCwf-RbL.svg#icon-star"></use>
             </svg>
           </li>
           <li class="reviews-stars-item">
             <svg class="reviews-stars-icon" width="17" height="18">
-              <use href="/food-delivery/assets/icons-CS671kEZ.svg#icon-star"></use>
+              <use href="/food-delivery/assets/icons-CCwf-RbL.svg#icon-star"></use>
             </svg>
           </li>
           <li class="reviews-stars-item">
             <svg class="reviews-stars-icon" width="17" height="18">
-              <use href="/food-delivery/assets/icons-CS671kEZ.svg#icon-star"></use>
+              <use href="/food-delivery/assets/icons-CCwf-RbL.svg#icon-star"></use>
             </svg>
           </li>
         </ul>
@@ -251,22 +255,22 @@
         <ul class="reviews-stars-list">
           <li class="reviews-stars-item">
             <svg class="reviews-stars-icon" width="17" height="18">
-              <use href="/food-delivery/assets/icons-CS671kEZ.svg#icon-star"></use>
+              <use href="/food-delivery/assets/icons-CCwf-RbL.svg#icon-star"></use>
             </svg>
           </li>
           <li class="reviews-stars-item">
             <svg class="reviews-stars-icon" width="17" height="18">
-              <use href="/food-delivery/assets/icons-CS671kEZ.svg#icon-star"></use>
+              <use href="/food-delivery/assets/icons-CCwf-RbL.svg#icon-star"></use>
             </svg>
           </li>
           <li class="reviews-stars-item">
             <svg class="reviews-stars-icon" width="17" height="18">
-              <use href="/food-delivery/assets/icons-CS671kEZ.svg#icon-star"></use>
+              <use href="/food-delivery/assets/icons-CCwf-RbL.svg#icon-star"></use>
             </svg>
           </li>
           <li class="reviews-stars-item">
             <svg class="reviews-stars-icon" width="17" height="18">
-              <use href="/food-delivery/assets/icons-CS671kEZ.svg#icon-star"></use>
+              <use href="/food-delivery/assets/icons-CCwf-RbL.svg#icon-star"></use>
             </svg>
           </li>
         </ul>
@@ -398,6 +402,50 @@
   </div>
 </footer>
 
+    <div class="modal-overlay js-overlay-modal"></div>
+<div class="modal" data-modal="1">
+  <button type="button" class="modal-btn-close js-modal-close">
+    <svg class="modal-icon-close" width="12" height="12">
+      <use href="/food-delivery/assets/icons-CCwf-RbL.svg#icon-menu-close"></use>
+    </svg>
+  </button>
+  <p class="modal-title">Order Form</p>
+  <form class="form">
+    <ul class="form-list">
+      <li class="form-item">
+        <label for="user-name" class="form-label">Name</label
+        ><input
+          type="text"
+          class="form-input"
+          id="user-name"
+          name="user-name"
+          placeholder="Your name"
+        />
+      </li>
+      <li class="form-item">
+        <label for="user-tel" class="form-label">Phone number</label
+        ><input
+          type="tel"
+          class="form-input"
+          id="user-tel"
+          name="user-tel"
+          placeholder="+38(0_ _) _ _ _   _ _   _ _"
+        />
+      </li>
+      <li class="form-item">
+        <label for="user-email" class="form-label">E-mail</label
+        ><input
+          type="email"
+          class="form-input"
+          id="user-email"
+          name="user-email"
+          placeholder="example@gmail.com"
+        />
+      </li>
+    </ul>
+    <button class="modal-submit-btn" type="submit">Send</button>
+  </form>
+</div>
 
   </body>
 </html>
