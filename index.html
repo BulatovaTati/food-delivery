@@ -19,7 +19,7 @@
     />
     <link rel="icon" type="image/png" sizes="66x52" href="/food-delivery/assets/logo-CXd7rZ-0.svg" />
     <script type="module" crossorigin src="/food-delivery/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/food-delivery/assets/index-DI-q-Qqa.css">
+    <link rel="stylesheet" crossorigin href="/food-delivery/assets/index-BzUUUVSh.css">
   </head>
   <body>
     <header class="header" id="home">
@@ -134,7 +134,13 @@
         </li>
       </ul>
       <div class="btn-container">
-        <button type="button" class="about-btn btn">Order Now</button>
+        <button
+          type="button"
+          class="about-btn btn js-open-modal"
+          data-modal="2"
+        >
+          Order Now
+        </button>
         <button type="button" class="read-more">
           Read More
           <svg class="read-more-icon" width="18" height="16">
@@ -402,19 +408,9 @@
   </div>
 </footer>
 
-    <div class="modal-overlay js-overlay-modal">
-  <div id="background-wrap">
-    <img src="/food-delivery/assets/borshch-tN7xa3WU.png" alt="Carrot" class="vegetable" />
-    <img src="/food-delivery/assets/pasta-CKP_RP2N.png" alt="Broccoli" class="vegetable" />
-    <img src="/food-delivery/assets/gamburger-CbNN-snP.png" alt="Tomato" class="vegetable" />
-    <img src="/food-delivery/assets/chicken-ChWPHuT1.png" alt="Pepper" class="vegetable" />
-    <img src="/food-delivery/assets/salat-DShwDLoq.png" alt="Pepper" class="vegetable" />
-    <img src="/food-delivery/assets/pizza-8wheV1Rj.png" alt="Pepper" class="vegetable" />
-  </div>
-</div>
-<div class="modal" data-modal="1">
+    <div class="modal" data-modal="1">
   <button type="button" class="modal-btn-close js-modal-close">
-    <svg class="modal-icon-close" width="12" height="12">
+    <svg class="modal-icon-close" width="24" height="24">
       <use href="/food-delivery/assets/icons-BKfs6eyL.svg#icon-menu-close"></use>
     </svg>
   </button>
@@ -455,6 +451,37 @@
     </ul>
     <button class="modal-submit-btn" type="submit">Send</button>
   </form>
+</div>
+<!-- 12 -->
+<div class="modal" data-modal="2">
+  <button type="button" class="modal-btn-close js-modal-close">
+    <svg class="modal-icon-close" width="24" height="24">
+      <use href="/food-delivery/assets/icons-BKfs6eyL.svg#icon-menu-close"></use>
+    </svg>
+  </button>
+  <p class="modal-title">Choose product</p>
+
+  <form class="veg-form">
+    <div class="slider-container">
+      <button type="button" class="arrow left-arrow">&lt;</button>
+      <!-- Left arrow -->
+
+      <ul class="veg-list"></ul>
+      <button type="button" class="arrow right-arrow">&gt;</button>
+      <!-- Right arrow -->
+    </div>
+    <button class="modal-submit-btn" type="submit">Submit</button>
+  </form>
+</div>
+<div class="modal-overlay js-overlay-modal">
+  <div id="background-wrap">
+    <img src="/food-delivery/assets/borshch-tN7xa3WU.png" alt="Carrot" class="vegetable" />
+    <img src="/food-delivery/assets/pasta-CKP_RP2N.png" alt="Broccoli" class="vegetable" />
+    <img src="/food-delivery/assets/gamburger-CbNN-snP.png" alt="Tomato" class="vegetable" />
+    <img src="/food-delivery/assets/chicken-ChWPHuT1.png" alt="Pepper" class="vegetable" />
+    <img src="/food-delivery/assets/salat-DShwDLoq.png" alt="Pepper" class="vegetable" />
+    <img src="/food-delivery/assets/pizza-8wheV1Rj.png" alt="Pepper" class="vegetable" />
+  </div>
 </div>
 
 
