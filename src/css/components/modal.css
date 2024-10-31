@@ -14,7 +14,7 @@
 }
 
 .modal {
-  position: absolute;
+  position: fixed;
   z-index: 2;
   top: 50%;
   left: 50%;
@@ -22,6 +22,7 @@
   max-width: 320px;
   width: 100%;
   height: 449px;
+  height: auto;
   padding: 32px;
   border-radius: 30px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.06);
@@ -29,7 +30,7 @@
   opacity: 0;
   visibility: hidden;
   transform: translate(-50%, -50%);
-  transition: transform 250ms ease;
+  transition: opacity 250ms ease, visibility 250ms ease;
 }
 
 @media screen and (min-width: 768px) {
@@ -43,10 +44,6 @@
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
-}
-
-.modal-overlay.active .modal {
-  transform: translate(-50%, -50%);
 }
 
 .modal-btn-close {
@@ -203,4 +200,62 @@
 .vegetable:nth-child(6) {
   left: 25%;
   animation-delay: 10s;
+}
+
+.veg-form {
+  position: relative;
+}
+.slider-container {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  touch-action: pan-y;
+  margin-bottom: 32px;
+}
+
+.veg-list {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.veg-item {
+  width: 100%;
+  min-width: 220px;
+  margin: 0 15px;
+  text-align: center;
+}
+
+.veg-form-input {
+  width: 70px;
+  padding: 10px;
+  text-align: center;
+}
+
+.veg-image {
+  width: 100%;
+  height: auto;
+}
+
+.arrow {
+  background-color: transparent;
+  color: #7eb101;
+  border: none;
+  cursor: pointer;
+  font-size: 24px;
+  padding: 10px;
+  z-index: 10;
+}
+
+.left-arrow {
+  position: absolute;
+  left: -32px;
+}
+
+.right-arrow {
+  position: absolute;
+  right: -32px;
 }
