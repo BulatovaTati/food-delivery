@@ -26,25 +26,38 @@
 })(window.Element.prototype);
 
 document.addEventListener('DOMContentLoaded', function () {
+  /* Записываем в переменные массив элементов-кнопок и подложку.
+      Подложке зададим id, чтобы не влиять на другие элементы с классом overlay*/
   var modalButtons = document.querySelectorAll('.js-open-modal'),
     overlay = document.querySelector('.js-overlay-modal'),
     closeButtons = document.querySelectorAll('.js-modal-close');
 
+  /* Перебираем массив кнопок */
   modalButtons.forEach(function (item) {
+    /* Назначаем каждой кнопке обработчик клика */
     item.addEventListener('click', function (e) {
+      /* Предотвращаем стандартное действие элемента. Так как кнопку разные
+            люди могут сделать по-разному. Кто-то сделает ссылку, кто-то кнопку.
+            Нужно подстраховаться. */
       e.preventDefault();
 
+      /* При каждом клике на кнопку мы будем забирать содержимое атрибута data-modal
+            и будем искать модальное окно с таким же атрибутом. */
       var modalId = this.getAttribute('data-modal'),
         modalElem = document.querySelector(
           '.modal[data-modal="' + modalId + '"]'
         );
 
+      /* После того как нашли нужное модальное окно, добавим классы
+            подложке и окну чтобы показать их. */
+      const burger = document.querySelector('div.js-menu-close');
+
       modalElem.classList.add('active');
       overlay.classList.add('active');
       document.body.classList.add('modal-open');
-      document.body.classList.remove('is-menu-shown');
-    });
-  });
+      burger.classList.remove('is-open');
+    }); // end click
+  }); // end foreach
 
   closeButtons.forEach(function (item) {
     item.addEventListener('click', function (e) {
@@ -54,17 +67,16 @@ document.addEventListener('DOMContentLoaded', function () {
       overlay.classList.remove('active');
       document.body.classList.remove('modal-open');
     });
-  });
+  }); // end foreach
 
   document.body.addEventListener(
     'keyup',
     function (e) {
-      var key = e.key;
+      var key = e.keyCode;
 
-      if (key === 'Escape') {
+      if (key == 27) {
         document.querySelector('.modal.active').classList.remove('active');
         document.querySelector('.modal-overlay').classList.remove('active');
-        document.body.classList.remove('modal-open');
       }
     },
     false
@@ -75,4 +87,4 @@ document.addEventListener('DOMContentLoaded', function () {
     this.classList.remove('active');
     document.body.classList.remove('modal-open');
   });
-});
+}); // end ready
