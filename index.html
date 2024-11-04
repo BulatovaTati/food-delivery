@@ -17,9 +17,13 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <link rel="icon" type="image/png" sizes="66x52" href="/food-delivery/assets/logo-CXd7rZ-0.svg" />
     <script type="module" crossorigin src="/food-delivery/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/food-delivery/assets/index-BzUUUVSh.css">
+    <link rel="stylesheet" crossorigin href="/food-delivery/assets/index-CcWWGH5C.css">
   </head>
   <body>
     <header class="header" id="home">
@@ -460,19 +464,101 @@
     </svg>
   </button>
   <p class="modal-title">Choose product</p>
-
   <form class="veg-form">
-    <div class="slider-container">
-      <button type="button" class="arrow left-arrow">&lt;</button>
-      <!-- Left arrow -->
-
-      <ul class="veg-list"></ul>
-      <button type="button" class="arrow right-arrow">&gt;</button>
-      <!-- Right arrow -->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img
+            src="/food-delivery/assets/borshch-tN7xa3WU.png"
+            alt="Borshch"
+            class="swiper-vegetable"
+          />
+          <input
+            type="number"
+            class="veg-form-input"
+            name="quantity"
+            min="0"
+            step="1"
+          />
+        </div>
+        <div class="swiper-slide">
+          <img
+            src="/food-delivery/assets/pasta-CKP_RP2N.png"
+            alt="Pasta"
+            class="swiper-vegetable"
+          />
+          <input
+            type="number"
+            class="veg-form-input"
+            name="quantity"
+            min="0"
+            step="1"
+          />
+        </div>
+        <div class="swiper-slide">
+          <img
+            src="/food-delivery/assets/gamburger-CbNN-snP.png"
+            alt="Gamburger"
+            class="swiper-vegetable"
+          />
+          <input
+            type="number"
+            class="veg-form-input"
+            name="quantity"
+            min="0"
+            step="1"
+          />
+        </div>
+        <div class="swiper-slide">
+          <img
+            src="/food-delivery/assets/chicken-ChWPHuT1.png"
+            alt="Chicken"
+            class="swiper-vegetable"
+          />
+          <input
+            type="number"
+            class="veg-form-input"
+            name="quantity"
+            min="0"
+            step="1"
+          />
+        </div>
+        <div class="swiper-slide">
+          <img
+            src="/food-delivery/assets/salat-DShwDLoq.png"
+            alt="Salat"
+            class="swiper-vegetable"
+          />
+          <input
+            type="number"
+            class="veg-form-input"
+            name="quantity"
+            min="0"
+            step="1"
+          />
+        </div>
+        <div class="swiper-slide">
+          <img
+            src="/food-delivery/assets/pizza-8wheV1Rj.png"
+            alt="Pizza"
+            class="swiper-vegetable"
+          />
+          <input
+            type="number"
+            class="veg-form-input"
+            name="quantity"
+            min="0"
+            step="1"
+          />
+        </div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
     </div>
     <button class="modal-submit-btn" type="submit">Submit</button>
   </form>
 </div>
+
 <div class="modal-overlay js-overlay-modal">
   <div id="background-wrap">
     <img src="/food-delivery/assets/borshch-tN7xa3WU.png" alt="Carrot" class="vegetable" />
@@ -485,5 +571,6 @@
 </div>
 
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   </body>
 </html>
