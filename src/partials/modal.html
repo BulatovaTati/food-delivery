@@ -50,19 +50,101 @@
     </svg>
   </button>
   <p class="modal-title">Choose product</p>
-
   <form class="veg-form">
-    <div class="slider-container">
-      <button type="button" class="arrow left-arrow">&lt;</button>
-      <!-- Left arrow -->
-
-      <ul class="veg-list"></ul>
-      <button type="button" class="arrow right-arrow">&gt;</button>
-      <!-- Right arrow -->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img
+            src="/images/favorites/borshch.png"
+            alt="Borshch"
+            class="swiper-vegetable"
+          />
+          <input
+            type="number"
+            class="veg-form-input"
+            name="quantity"
+            min="0"
+            step="1"
+          />
+        </div>
+        <div class="swiper-slide">
+          <img
+            src="/images/favorites/pasta.png"
+            alt="Pasta"
+            class="swiper-vegetable"
+          />
+          <input
+            type="number"
+            class="veg-form-input"
+            name="quantity"
+            min="0"
+            step="1"
+          />
+        </div>
+        <div class="swiper-slide">
+          <img
+            src="/images/favorites/gamburger.png"
+            alt="Gamburger"
+            class="swiper-vegetable"
+          />
+          <input
+            type="number"
+            class="veg-form-input"
+            name="quantity"
+            min="0"
+            step="1"
+          />
+        </div>
+        <div class="swiper-slide">
+          <img
+            src="/images/favorites/chicken.png"
+            alt="Chicken"
+            class="swiper-vegetable"
+          />
+          <input
+            type="number"
+            class="veg-form-input"
+            name="quantity"
+            min="0"
+            step="1"
+          />
+        </div>
+        <div class="swiper-slide">
+          <img
+            src="/images/favorites/salat.png"
+            alt="Salat"
+            class="swiper-vegetable"
+          />
+          <input
+            type="number"
+            class="veg-form-input"
+            name="quantity"
+            min="0"
+            step="1"
+          />
+        </div>
+        <div class="swiper-slide">
+          <img
+            src="/images/favorites/pizza.png"
+            alt="Pizza"
+            class="swiper-vegetable"
+          />
+          <input
+            type="number"
+            class="veg-form-input"
+            name="quantity"
+            min="0"
+            step="1"
+          />
+        </div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
     </div>
     <button class="modal-submit-btn" type="submit">Submit</button>
   </form>
 </div>
+
 <div class="modal-overlay js-overlay-modal">
   <div id="background-wrap">
     <img src="/images/favorites/borshch.png" alt="Carrot" class="vegetable" />

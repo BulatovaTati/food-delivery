@@ -17,6 +17,10 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <link rel="icon" type="image/png" sizes="66x52" href="./images/logo.svg" />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
@@ -32,6 +36,24 @@
     <load src="partials/footer.html" />
     <load src="partials/modal.html" />
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script type="module">
+      const swiper = new Swiper('.mySwiper', {
+        spaceBetween: 10,
+
+        // Navigation arrows
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+        keyboard: {
+          enabled: true,
+          onlyInViewport: true,
+        },
+
+        preloadImages: false,
+      });
+    </script>
     <script type="module" src="./main.js"></script>
   </body>
 </html>

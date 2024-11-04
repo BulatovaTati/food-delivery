@@ -6,3 +6,72 @@
     top: 100vh; /* End below the viewport */
   }
 }
+
+#background-wrap {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  z-index: -1;
+  pointer-events: none;
+}
+
+.modal-overlay.js-overlay-modal.active #background-wrap {
+  display: block;
+}
+
+.vegetable {
+  position: absolute;
+  width: 80px;
+  height: 60px;
+  background-color: transparent;
+  border-radius: 50%;
+  top: -200px;
+  animation: animateVegetable 10s linear infinite;
+}
+
+@media screen and (min-width: 768px) {
+  .vegetable {
+    width: 150px;
+    height: 120px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .vegetable {
+    width: 190px;
+    height: 150px;
+  }
+}
+
+.vegetable:nth-child(1) {
+  left: 10%;
+  animation-delay: 0s;
+}
+
+.vegetable:nth-child(2) {
+  left: 30%;
+  animation-delay: 2s;
+}
+
+.vegetable:nth-child(3) {
+  left: 50%;
+  animation-delay: 4s;
+}
+
+.vegetable:nth-child(4) {
+  left: 70%;
+  animation-delay: 6s;
+}
+
+.vegetable:nth-child(5) {
+  left: 90%;
+  animation-delay: 8s;
+}
+
+.vegetable:nth-child(6) {
+  left: 25%;
+  animation-delay: 10s;
+}
