@@ -10,11 +10,20 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      rel="stylesheet"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <link rel="icon" type="image/png" sizes="66x52" href="/food-delivery/assets/logo-CXd7rZ-0.svg" />
     <script type="module" crossorigin src="/food-delivery/index.js"></script>
-    <link rel="modulepreload" crossorigin href="/food-delivery/assets/vendor-eXYtgC_A.js">
-    <link rel="stylesheet" crossorigin href="/food-delivery/assets/vendor-C_qm3XGS.css">
-    <link rel="stylesheet" crossorigin href="/food-delivery/assets/index-B4fRHO_3.css">
+    <link rel="stylesheet" crossorigin href="/food-delivery/assets/index-Cv5zzfRp.css">
   </head>
   <body>
     <header class="header" id="home">
@@ -69,81 +78,84 @@
       <section class="hero">
   <div class="container hero-container">
     <h1 class="hero-title">Enjoy Your Favorite Food From Anywhere</h1>
-    <div class="hero-wrapper">
-      <div class="hero-text-wrapper">
-        <p class="hero-text">
-          With just a few clicks, you can have your favorite meals delivered
-          straight to your doorstep, no matter where you are. Order now and
-          enjoy a hassle-free and delicious meal from the comfort of your own
-          home.
-        </p>
-        <button type="button" class="hero-btn btn js-open-modal" data-modal="1">
-          Order Now
-        </button>
-      </div>
-      <div class="splide hero-splide">
-        <div class="splide__track">
-          <ul class="splide__list">
-            <li class="splide__slide">
-              <picture>
-                <source
-                  srcset="/food-delivery/assets/Foto1-BRL-O1yS.png 1x"
-                  media="(min-width: 320px)"
-                  type="image/png"
-                />
-                <source
-                  srcset="/food-delivery/assets/Foto1-BRL-O1yS.png 1x"
-                  media="(min-width: 1280px)"
-                  type="image/png"
-                />
-                <img
-                  src="/food-delivery/assets/Foto1-BRL-O1yS.png"
-                  alt="Foto1"
-                  class="splide-img-hero"
-                />
-              </picture>
-            </li>
-            <li class="splide__slide">
-              <picture>
-                <source
-                  srcset="/food-delivery/assets/Foto2-COmjXuzR.png 1x"
-                  media="(min-width: 320px)"
-                  type="image/png"
-                />
-                <source
-                  srcset="/food-delivery/assets/Foto2-COmjXuzR.png 1x"
-                  media="(min-width: 1280px)"
-                  type="image/png"
-                />
-                <img
-                  src="/food-delivery/assets/Foto2-COmjXuzR.png"
-                  alt="Foto2"
-                  class="splide-img-hero"
-                />
-              </picture>
-            </li>
-            <li class="splide__slide">
-              <picture>
-                <source
-                  srcset="/food-delivery/assets/Foto3-dmsqZsws.png 1x"
-                  media="(min-width: 320px)"
-                  type="image/png"
-                />
-                <source
-                  srcset="/food-delivery/assets/Foto3-dmsqZsws.png 1x"
-                  media="(min-width: 1280px)"
-                  type="image/png"
-                />
-                <img
-                  src="/food-delivery/assets/Foto3-dmsqZsws.png"
-                  alt="Foto3"
-                  class="splide-img-hero"
-                />
-              </picture>
-            </li>
-          </ul>
-        </div>
-      </div>
+    <div class="hero-text-wrapper">
+      <p class="hero-text">
+        With just a few clicks, you can have your favorite meals delivered
+        straight to your doorstep, no matter where you are. Order now and enjoy
+        a hassle-free and delicious meal from the comfort of your own home.
+      </p>
+      <button type="button" class="hero-btn btn js-open-modal" data-modal="1">
+        Order Now
+      </button>
+    </div>
+    <div class="swiper orderSwiper">
+      <ul class="swiper-wrapper">
+        <li class="swiper-slide">
+          <picture>
+            <source
+              srcset="/food-delivery/assets/Foto1-BRL-O1yS.png 1x"
+              srcset="./images/hero/tab/Foto1-2x.png 2x"
+              media="(min-width: 320px)"
+              type="image/png"
+            />
+            <source
+              srcset="/food-delivery/assets/Foto1-DYlAMNF6.png 1x"
+              srcset="./images/hero/dec/Foto1-2x.png 2x"
+              media="(min-width: 1280px)"
+              type="image/png"
+            />
+            <img
+              src="/food-delivery/assets/Foto1-BRL-O1yS.png"
+              alt="Foto1"
+              class="swiper-img-hero"
+            />
+          </picture>
+        </li>
+        <li class="swiper-slide">
+          <picture>
+            <source
+              srcset="/food-delivery/assets/Foto2-COmjXuzR.png 1x"
+              srcset="./images/hero/tab/Foto2-2x.png 2x"
+              media="(min-width: 320px)"
+              type="image/png"
+            />
+            <source
+              srcset="/food-delivery/assets/Foto2-bl50aACj.png 1x"
+              srcset="./images/hero/dec/Foto2-2x.png 2x"
+              media="(min-width: 1280px)"
+              type="image/png"
+            />
+            <img
+              src="/food-delivery/assets/Foto2-COmjXuzR.png"
+              alt="Foto2"
+              class="swiper-img-hero"
+            />
+          </picture>
+        </li>
+        <li class="swiper-slide">
+          <picture>
+            <source
+              srcset="/food-delivery/assets/Foto3-dmsqZsws.png 1x"
+              srcset="./images/hero/tab/Foto3-2x.png 2x"
+              media="(min-width: 320px)"
+              type="image/png"
+            />
+            <source
+              srcset="/food-delivery/assets/Foto3-CUgxPZ-C.png 1x"
+              srcset="./images/hero/dec/Foto3-2x.png 2x"
+              media="(min-width: 1280px)"
+              type="image/png"
+            />
+            <img
+              src="/food-delivery/assets/Foto3-dmsqZsws.png"
+              alt="Foto3"
+              class="swiper-img-hero"
+            />
+          </picture>
+        </li>
+      </ul>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
     </div>
   </div>
 </section>
@@ -469,7 +481,8 @@
   </div>
 </footer>
 
-    <div class="modal" data-modal="1">
+    <!--? Hero/Header order modal -->
+<div class="modal" data-modal="1">
   <button type="button" class="modal-btn-close js-modal-close">
     <svg class="modal-icon-close" width="24" height="24">
       <use href="/food-delivery/assets/icons-BKfs6eyL.svg#icon-menu-close"></use>
@@ -512,7 +525,7 @@
     <button class="modal-submit-btn" type="submit">Send</button>
   </form>
 </div>
-<!-- 12 -->
+<!--? About -->
 <div class="modal" data-modal="2">
   <button type="button" class="modal-btn-close js-modal-close">
     <svg class="modal-icon-close" width="24" height="24">
@@ -520,101 +533,101 @@
     </svg>
   </button>
   <p class="modal-title">Choose product</p>
-  <form>
-    <div class="splide">
-      <div class="splide__track">
-        <ul class="splide__list">
-          <li class="splide__slide">
-            <img
-              src="/food-delivery/assets/borshch-tN7xa3WU.png"
-              alt="Borshch"
-              class="splide-img"
-            />
-            <input
-              type="number"
-              class="splide-input"
-              name="quantity"
-              min="0"
-              step="1"
-            />
-          </li>
-          <li class="splide__slide">
-            <img
-              src="/food-delivery/assets/pasta-CKP_RP2N.png"
-              alt="Pasta"
-              class="splide-img"
-            />
-            <input
-              type="number"
-              class="splide-input"
-              name="quantity"
-              min="0"
-              step="1"
-            />
-          </li>
-          <li class="splide__slide">
-            <img
-              src="/food-delivery/assets/gamburger-CbNN-snP.png"
-              alt="Gamburger"
-              class="splide-img"
-            />
-            <input
-              type="number"
-              class="splide-input"
-              name="quantity"
-              min="0"
-              step="1"
-            />
-          </li>
-          <li class="splide__slide">
-            <img
-              src="/food-delivery/assets/chicken-ChWPHuT1.png"
-              alt="Chicken"
-              class="splide-img"
-            />
-            <input
-              type="number"
-              class="splide-input"
-              name="quantity"
-              min="0"
-              step="1"
-            />
-          </li>
-          <li class="splide__slide">
-            <img
-              src="/food-delivery/assets/salat-DShwDLoq.png"
-              alt="Salat"
-              class="splide-img"
-            />
-            <input
-              type="number"
-              class="splide-input"
-              name="quantity"
-              min="0"
-              step="1"
-            />
-          </li>
-          <li class="splide__slide">
-            <img
-              src="/food-delivery/assets/pizza-8wheV1Rj.png"
-              alt="Pizza"
-              class="splide-img"
-            />
-            <input
-              type="number"
-              class="splide-input"
-              name="quantity"
-              min="0"
-              step="1"
-            />
-          </li>
-        </ul>
+  <form class="veg-form">
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img
+            src="/food-delivery/assets/borshch-tN7xa3WU.png"
+            alt="Borshch"
+            class="swiper-vegetable"
+          />
+          <input
+            type="number"
+            class="veg-form-input"
+            name="quantity"
+            min="0"
+            step="1"
+          />
+        </div>
+        <div class="swiper-slide">
+          <img
+            src="/food-delivery/assets/pasta-CKP_RP2N.png"
+            alt="Pasta"
+            class="swiper-vegetable"
+          />
+          <input
+            type="number"
+            class="veg-form-input"
+            name="quantity"
+            min="0"
+            step="1"
+          />
+        </div>
+        <div class="swiper-slide">
+          <img
+            src="/food-delivery/assets/gamburger-CbNN-snP.png"
+            alt="Gamburger"
+            class="swiper-vegetable"
+          />
+          <input
+            type="number"
+            class="veg-form-input"
+            name="quantity"
+            min="0"
+            step="1"
+          />
+        </div>
+        <div class="swiper-slide">
+          <img
+            src="/food-delivery/assets/chicken-ChWPHuT1.png"
+            alt="Chicken"
+            class="swiper-vegetable"
+          />
+          <input
+            type="number"
+            class="veg-form-input"
+            name="quantity"
+            min="0"
+            step="1"
+          />
+        </div>
+        <div class="swiper-slide">
+          <img
+            src="/food-delivery/assets/salat-DShwDLoq.png"
+            alt="Salat"
+            class="swiper-vegetable"
+          />
+          <input
+            type="number"
+            class="veg-form-input"
+            name="quantity"
+            min="0"
+            step="1"
+          />
+        </div>
+        <div class="swiper-slide">
+          <img
+            src="/food-delivery/assets/pizza-8wheV1Rj.png"
+            alt="Pizza"
+            class="swiper-vegetable"
+          />
+          <input
+            type="number"
+            class="veg-form-input"
+            name="quantity"
+            min="0"
+            step="1"
+          />
+        </div>
       </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
     </div>
     <button class="modal-submit-btn" type="submit">Submit</button>
   </form>
 </div>
-
+<!--? Overlay pizzas-->
 <div class="modal-overlay js-overlay-modal">
   <div id="background-wrap">
     <img src="/food-delivery/assets/borshch-tN7xa3WU.png" alt="Carrot" class="vegetable" />
@@ -627,5 +640,6 @@
 </div>
 
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   </body>
 </html>
