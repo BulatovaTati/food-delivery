@@ -116,7 +116,7 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 20px;
+
   border: 2px solid #7eb101;
   border-radius: 30px;
 
@@ -131,4 +131,67 @@
 .modal-submit-btn:focus {
   background-color: #bbf330;
   border-color: #7eb101;
+}
+
+.swiper-vegetable {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 15px;
+  width: 150px;
+}
+
+@media screen and (min-width: 768px) {
+  .swiper-vegetable {
+    width: 220px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .swiper-vegetable {
+    width: 280px;
+  }
+}
+
+.veg-form-input {
+  max-width: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  margin-bottom: 20px;
+  text-align: center;
+  padding: 10px;
+  border: 2px solid #7eb101;
+  border-radius: 5px;
+  background-color: #fff;
+  outline: none;
+  transition: box-shadow 250ms ease;
+}
+
+.veg-form-input:focus {
+  box-shadow: 0 0 5px rgba(6, 6, 2, 0.5);
+}
+
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
+input[type='number'] {
+  appearance: textfield;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #fff;
+  width: 40px;
+  height: 40px;
+}
+
+.swiper-button-next {
+  right: 0;
+}
+
+.swiper-button-prev {
+  left: 0;
 }
