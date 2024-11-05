@@ -1,0 +1,43 @@
+.orderSwiper {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .orderSwiper {
+    width: 320px;
+    height: 320px;
+    border: 14px solid #ffe550;
+    border-radius: 50%;
+    display: block;
+    margin: 0;
+  }
+
+  .swiper-slide {
+    padding: 10px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .orderSwiper {
+    margin-top: -47px;
+    width: 580px;
+    height: 580px;
+  }
+
+  .swiper-img-hero {
+    width: 100%;
+  }
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #7eb101;
+}
+
+.swiper-button-prev {
+  left: -5px;
+}
+
+.swiper-button-next {
+  right: -5px;
+}
