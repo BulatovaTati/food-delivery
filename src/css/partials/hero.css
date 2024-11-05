@@ -14,29 +14,24 @@
   line-height: 1.43;
 }
 
+.hero-text-wrapper {
+  margin-bottom: 37px;
+}
+
 @media screen and (min-width: 768px) {
   .hero {
     padding-bottom: 118px;
   }
 
   .hero-container {
-    position: relative;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    flex-wrap: wrap;
   }
 
-  .hero-container::after {
-    content: '';
-    position: absolute;
-    top: 69px;
-    right: 38px;
-    width: 320px;
-    height: 320px;
-    background-image: url('/images/hero/tablet-photo.png');
-    background-size: cover;
-    border-radius: 50%;
-    border: 26px solid #ffe550;
+  .hero-wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
   }
 
   .hero-title {
@@ -59,24 +54,12 @@
     padding-bottom: 64px;
   }
 
-  .hero-container {
-    height: 608px;
-  }
-
-  .hero-container::after {
-    top: 0;
-    width: 580px;
-    height: 580px;
-    background-image: url('/images/hero.png');
-  }
-
-  .hero-wrapper {
+  .hero-text-wrapper {
     max-width: 511px;
-    margin-right: 143px;
+    margin-bottom: 0;
   }
 
   .hero-title {
-    max-width: 503px;
     font-size: 48px;
   }
 
