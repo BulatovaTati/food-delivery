@@ -3,4 +3,12 @@
   --time: 300ms;
   --cubic: cubic-bezier(0.4, 0, 0.2, 1);
   /* #endregion */
+
+  /* #region Colors */
+  --primary-color: #ffe550; /* Example color */
+  --secondary-color: #7eb101; /* Example color */
+  --text-color: #2c2c2c; /* Example color */
+  --background-color: #fefefe; /* Example color */
+  --highlight-color: #bbf330; /* Example color */
+  /* #endregion */
 }
