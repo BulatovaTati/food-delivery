@@ -11,61 +11,55 @@
       rel="stylesheet"
     />
     <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
-      rel="stylesheet"
-      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
-    <link rel="icon" type="image/png" sizes="66x52" href="/food-delivery/assets/logo-CXd7rZ-0.svg" />
+    <link rel="icon" type="image/png" sizes="66x52" href="/food-delivery/logo.svg" />
     <script type="module" crossorigin src="/food-delivery/index.js"></script>
     <link rel="modulepreload" crossorigin href="/food-delivery/assets/vendor-CgTBfC_f.js">
     <link rel="stylesheet" crossorigin href="/food-delivery/assets/vendor-DkczhqSJ.css">
-    <link rel="stylesheet" crossorigin href="/food-delivery/assets/index-Cv5zzfRp.css">
+    <link rel="stylesheet" crossorigin href="/food-delivery/assets/index-BzLvZboS.css">
   </head>
   <body>
     <header class="header" id="home">
   <div class="container header-container">
-    <a href="" class="logo">
-      <img
-        class="logo-image"
-        src="/food-delivery/assets/logo-CXd7rZ-0.svg"
-        alt="Logo of our site"
-        width="66"
-        height="52"
-      />
-    </a>
+    <a href="/index.html" class="logo {=$class-modifier}">
+  <img
+    class="logo-image"
+    src="/food-delivery/logo.svg"
+    alt="Logo of our site"
+    width="66"
+    height="52"
+  />
+</a>
+
+    <!--? Menu burger  -->
     <div class="burger js-menu js-menu-close" data-menu-button>
       <span class="burger-icon"></span>
     </div>
     <nav class="navigation">
-  <ul class="nav-list">
-    <li class="nav-item">
-      <a href="#home" class="nav-link current">Home</a>
-    </li>
-    <li class="nav-item">
-      <a href="#customers" class="nav-link">Customers</a>
-    </li>
-    <li class="nav-item">
-      <a href="#about" class="nav-link">About</a>
-    </li>
-    <li class="nav-item">
-      <a href="#service" class="nav-link">Service</a>
-    </li>
-    <li class="nav-item">
-      <a href="#menu" class="nav-link">Menu</a>
-    </li>
-    <li class="nav-item">
-      <a href="#contact" class="nav-link">Contact</a>
-    </li>
-  </ul>
-</nav>
+      <ul class="nav-list {=$class-list-modifier}">
+  <li class="nav-item {=$class-item-modifier}">
+    <a href="#home" class="nav-link current {=$class-link-modifier}">Home</a>
+  </li>
+  <li class="nav-item {=$class-item-modifier}">
+    <a href="#customers" class="nav-link {=$class-link-modifier}">Customers</a>
+  </li>
+  <li class="nav-item {=$class-item-modifier}">
+    <a href="#about" class="nav-link {=$class-link-modifier}">About</a>
+  </li>
+  <li class="nav-item {=$class-item-modifier}">
+    <a href="#service" class="nav-link {=$class-link-modifier}">Service</a>
+  </li>
+  <li class="nav-item {=$class-item-modifier}">
+    <a href="#menu" class="nav-link {=$class-link-modifier}">Menu</a>
+  </li>
+  <li class="nav-item {=$class-item-modifier}">
+    <a href="#contact" class="nav-link {=$class-link-modifier}">Contact</a>
+  </li>
+</ul>
 
-
+    </nav>
     <button
       type="button"
       class="header-button btn js-open-modal"
@@ -216,12 +210,17 @@
         >
           Order Now
         </button>
-        <button type="button" class="read-more">
-          Read More
-          <svg class="read-more-icon" width="18" height="16">
-            <use href="/food-delivery/assets/icons-BKfs6eyL.svg#icon-arrow"></use>
-          </svg>
-        </button>
+        <div class="text-container">
+          <button type="button" class="read-more">
+            <svg class="read-more-icon" width="18" height="16">
+              <use href="/food-delivery/assets/icons-BKfs6eyL.svg#icon-arrow"></use>
+            </svg>
+          </button>
+          <p class="extra-text">
+            Order now and receive 10% off your first meal with Enjoy Your
+            Favorite Food From Anywhere.
+          </p>
+        </div>
       </div>
     </div>
   </div>
@@ -231,74 +230,7 @@
   <div class="container">
     <h1 class="favorites-title">Some of Our Favorites</h1>
     <p class="favorites-text">Looking for something delicious?</p>
-    <ul class="favorites-list gallery">
-      <li class="favorites-item">
-        <a
-          href="https://bulatovatati.github.io/food-delivery/images/favorites/gamburger-3x.png"
-        >
-          <img
-            class="favorites-img"
-            src="/food-delivery/assets/gamburger-CbNN-snP.png"
-            alt="photo of gamburger"
-            width="315"
-        /></a>
-      </li>
-      <li class="favorites-item">
-        <a
-          href="https://bulatovatati.github.io/food-delivery/images/favorites/pasta-3x.png"
-        >
-          <img
-            class="favorites-img"
-            src="/food-delivery/assets/pasta-CKP_RP2N.png"
-            alt="photo of pasta"
-            width="315"
-        /></a>
-      </li>
-      <li class="favorites-item">
-        <a
-          href="https://bulatovatati.github.io/food-delivery/images/favorites/pizza-3x.png"
-        >
-          <img
-            class="favorites-img"
-            src="/food-delivery/assets/pizza-8wheV1Rj.png"
-            alt="photo of pizza"
-            width="315"
-        /></a>
-      </li>
-      <li class="favorites-item">
-        <a
-          href="https://bulatovatati.github.io/food-delivery/images/favorites/chicken-3x.png"
-        >
-          <img
-            class="favorites-img"
-            src="/food-delivery/assets/chicken-ChWPHuT1.png"
-            alt="photo of chicken"
-            width="315"
-        /></a>
-      </li>
-      <li class="favorites-item">
-        <a
-          href="https://bulatovatati.github.io/food-delivery/images/favorites/salat-3x.png"
-        >
-          <img
-            class="favorites-img"
-            src="/food-delivery/assets/salat-DShwDLoq.png"
-            alt="photo of salat"
-            width="315"
-        /></a>
-      </li>
-      <li class="favorites-item">
-        <a
-          href="https://bulatovatati.github.io/food-delivery/images/favorites/borshch-3x.png"
-        >
-          <img
-            class="favorites-img"
-            src="/food-delivery/assets/borshch-tN7xa3WU.png"
-            alt="photo of borshch"
-            width="315"
-        /></a>
-      </li>
-    </ul>
+    <ul class="favorites-list"></ul>
   </div>
 </section>
 
@@ -430,37 +362,37 @@
   <div class="container">
     <div class="footer-up-wrapper">
       <div class="foooter-up-container">
-        <a href="" class="logo-footer">
-          <img
-            class="footer-image"
-            src="/food-delivery/assets/logo-CXd7rZ-0.svg"
-            alt="Logo of our site"
-            width="66"
-            height="52"
-          />
-        </a>
+        <a href="/index.html" class="logo logo-footer">
+  <img
+    class="logo-image"
+    src="/food-delivery/logo.svg"
+    alt="Logo of our site"
+    width="66"
+    height="52"
+  />
+</a>
+
         <ul class="nav-list footer-nav-list">
-          <li class="nav-item footer-nav-item">
-            <a href="" class="nav-link footer-nav-link">Home</a>
-          </li>
-          <li class="nav-item footer-nav-item">
-            <a href="./customers.html" class="nav-link footer-nav-link"
-              >Customers</a
-            >
-          </li>
-          <li class="nav-item footer-nav-item">
-            <a href="" class="nav-link footer-nav-link">About</a>
-          </li>
-          <li class="nav-item footer-nav-item">
-            <a href="" class="nav-link footer-nav-link">Service</a>
-          </li>
-          <li class="nav-item footer-nav-item">
-            <a href="" class="nav-link footer-nav-link">Menu</a>
-          </li>
-          <li class="nav-item footer-nav-item">
-            <a href="" class="nav-link footer-nav-link"> Contact</a>
-          </li>
-        </ul>
+  <li class="nav-item footer-nav-item">
+    <a href="#home" class="nav-link current footer-nav-link">Home</a>
+  </li>
+  <li class="nav-item footer-nav-item">
+    <a href="#customers" class="nav-link footer-nav-link">Customers</a>
+  </li>
+  <li class="nav-item footer-nav-item">
+    <a href="#about" class="nav-link footer-nav-link">About</a>
+  </li>
+  <li class="nav-item footer-nav-item">
+    <a href="#service" class="nav-link footer-nav-link">Service</a>
+  </li>
+  <li class="nav-item footer-nav-item">
+    <a href="#menu" class="nav-link footer-nav-link">Menu</a>
+  </li>
+  <li class="nav-item footer-nav-item">
+    <a href="#contact" class="nav-link footer-nav-link">Contact</a>
+  </li>
+</ul>
+
       </div>
       <div class="footer-form-container">
         <p class="footer-form-title">Subscribe</p>
@@ -658,6 +590,24 @@
     <img src="/food-delivery/assets/pizza-8wheV1Rj.png" alt="Pepper" class="vegetable" />
   </div>
 </div>
+
+    <button class="scroll-to-top js-transparent">
+  <svg
+    width="20"
+    height="20"
+    viewBox="0 0 24 24"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M12 19V5M5 12l7-7 7 7"
+      stroke="currentColor"
+      stroke-width="2"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    />
+  </svg>
+</button>
 
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
