@@ -27,14 +27,14 @@
   justify-content: center;
 
   width: 100%;
-  border: 16px solid #ffe550;
+  border: 16px solid var(--primary-color);
   border-radius: 50%;
   transition: border-color 250ms ease;
 }
 
 .favorites-item:hover,
 .favorites-item:focus {
-  border-color: #7eb101;
+  border-color: var(--secondary-color);
 }
 
 @media screen and (min-width: 768px) {

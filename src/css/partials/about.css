@@ -1,5 +1,5 @@
 .about {
-  background-color: #ffe550;
+  background-color: var(--primary-color);
   padding-top: 91px;
   padding-bottom: 91px;
 }
@@ -20,7 +20,7 @@
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  background-color: #fefefe;
+  background-color: var(--background-color);
   width: 255px;
   height: 255px;
 }
@@ -51,7 +51,7 @@
   width: 48px;
   height: 48px;
   border-radius: 50%;
-  background-color: #fefefe;
+  background-color: var(--background-color);
 }
 
 .about-list {
@@ -63,7 +63,7 @@
 }
 
 .about-icon {
-  fill: #7eb101;
+  fill: var(--secondary-color);
 }
 
 .about-item-title {
@@ -92,14 +92,14 @@
   height: 40px;
   padding: 10px 20px;
   background-color: #fff;
-  border: 2px solid #7eb101;
+  border: 2px solid var(--secondary-color);
   transition: background-color 250ms ease, outline 250ms ease,
     border-color 250ms ease;
 }
 
 .about-btn:hover,
 .about-btn:focus {
-  background-color: #bbf330;
+  background-color: var(--highlight-color);
   outline: none;
   border-color: transparent;
 }
@@ -124,7 +124,7 @@
 
 .read-more:hover,
 .read-more:focus {
-  text-shadow: 1px 0 2px #bbf330;
+  text-shadow: 1px 0 2px var(--highlight-color);
 }
 
 .read-more-icon {
@@ -134,7 +134,7 @@
 
 .read-more:hover .read-more-icon,
 .read-more:focus .read-more-icon {
-  fill: #bbf330;
+  fill: var(--highlight-color);
 }
 
 .extra-text {
@@ -191,7 +191,7 @@
 
   .about-image-wrapper {
     border-radius: 50%;
-    background-color: #fefefe;
+    background-color: var(--background-color);
     width: 325px;
     height: 325px;
   }

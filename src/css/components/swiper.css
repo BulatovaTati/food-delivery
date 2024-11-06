@@ -6,7 +6,7 @@
   .orderSwiper {
     width: 320px;
     height: 320px;
-    border: 14px solid #ffe550;
+    border: 14px solid var(--primary-color);
     border-radius: 50%;
     display: block;
     margin: 0;
@@ -31,7 +31,7 @@
 
 .swiper-button-next,
 .swiper-button-prev {
-  color: #7eb101;
+  color: var(--secondary-color);
 }
 
 .swiper-button-prev {

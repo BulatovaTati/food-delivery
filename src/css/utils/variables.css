@@ -5,10 +5,13 @@
   /* #endregion */
 
   /* #region Colors */
-  --primary-color: #ffe550; /* Example color */
-  --secondary-color: #7eb101; /* Example color */
-  --text-color: #2c2c2c; /* Example color */
-  --background-color: #fefefe; /* Example color */
-  --highlight-color: #bbf330; /* Example color */
+  --primary-color: #ffe550;
+  --text-white-color: #ffffff;
+  --secondary-color: #7eb101;
+  --text-color: #2c2c2c;
+  --text-placeholder: #c4c4c4;
+  --background-color: #fefefe;
+  --background-second-color: #ffffff;
+  --highlight-color: #bbf330;
   /* #endregion */
 }

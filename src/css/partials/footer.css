@@ -4,7 +4,7 @@
 
   background-image: url('/images/footer/mob/group-66-1x.png');
 
-  background-color: #fefefe;
+  background-color: var(--background-color);
   background-repeat: no-repeat;
   background-position: bottom center;
 
@@ -48,7 +48,7 @@
 
 .form-policy-link {
   text-decoration: underline;
-  color: #7eb101;
+  color: var(--secondary-color);
 }
 
 .form-policy {
@@ -57,15 +57,15 @@
 
 .footer-form-btn {
   margin-left: 0;
-  border: 0.85px solid #7eb101;
-  background-color: #fff;
+  border: 0.85px solid var(--secondary-color);
+  background-color: var(--background-second-color);
   transition: border 250ms ease, background-color 250ms ease;
 }
 
 .footer-form-btn:hover,
 .footer-form-btn:focus {
   border: none;
-  background-color: #ffe450;
+  background-color: var(--primary-color);
 }
 
 .policy-list {
@@ -80,7 +80,7 @@
   font-size: 10px;
   text-decoration: underline;
   text-decoration-skip-ink: none;
-  color: #7eb101;
+  color: var(--secondary-color);
 }
 
 .footer-copyright {

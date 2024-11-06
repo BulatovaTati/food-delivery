@@ -87,7 +87,6 @@
   font-weight: 500;
   font-size: 16px;
   line-height: 1.4;
-  color: #2c2c2c;
 }
 
 .form-input {
@@ -98,18 +97,18 @@
   outline: transparent;
   padding-left: 12px;
   box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.15);
-  background-color: #fff;
+  background-color: var(--background-second-color);
 }
 
 .form-input:focus {
-  border: 1px solid #7eb101;
+  border: 1px solid var(--secondary-color);
 }
 
 .form-input::placeholder {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
-  color: #c4c4c4;
+  color: var(--text-placeholder);
 }
 
 .modal-submit-btn {
@@ -117,7 +116,7 @@
   margin-left: auto;
   margin-right: auto;
 
-  border: 2px solid #7eb101;
+  border: 2px solid var(--secondary-color);
   border-radius: 30px;
 
   width: 106px;
@@ -129,8 +128,8 @@
 
 .modal-submit-btn:hover,
 .modal-submit-btn:focus {
-  background-color: #bbf330;
-  border-color: #7eb101;
+  background-color: var(--highlight-color);
+  border-color: var(--secondary-color);
 }
 
 .swiper-vegetable {
@@ -160,7 +159,7 @@
   margin-bottom: 20px;
   text-align: center;
   padding: 10px;
-  border: 2px solid #7eb101;
+  border: 2px solid var(--secondary-color);
   border-radius: 5px;
   background-color: #fff;
   outline: none;
@@ -183,7 +182,7 @@ input[type='number'] {
 
 .swiper-button-next,
 .swiper-button-prev {
-  color: #fff;
+  color: var(--text-white-color);
   width: 40px;
   height: 40px;
 }

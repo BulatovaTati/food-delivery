@@ -9,8 +9,8 @@
 
   border-radius: 50%;
   border: none;
-  background-color: #bbf330;
-  color: white;
+  background-color: var(--highlight-color);
+  color: var(--text-white-color);
   cursor: pointer;
 
   transition: opacity var(--time) var(--cubic),
