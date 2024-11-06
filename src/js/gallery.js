@@ -3,37 +3,43 @@ import 'simplelightbox/dist/simple-lightbox.min.css';
 
 const images = [
   {
-    preview: '/images/favorites/gamburger.png',
+    preview:
+      'https://bulatovatati.github.io/food-delivery/images/favorites/gamburger.png',
     original:
       'https://bulatovatati.github.io/food-delivery/images/favorites/gamburger-3x.png',
     description: 'photo of gamburger',
   },
   {
-    preview: '/images/favorites/pasta.png',
+    preview:
+      'https://bulatovatati.github.io/food-delivery/images/favorites/pasta.png',
     original:
       'https://bulatovatati.github.io/food-delivery/images/favorites/pasta-3x.png',
     description: 'photo of pasta',
   },
   {
-    preview: '/images/favorites/pizza.png',
+    preview:
+      'https://bulatovatati.github.io/food-delivery/images/favorites/pizza.png',
     original:
       'https://bulatovatati.github.io/food-delivery/images/favorites/pizza-3x.png',
     description: 'photo of pizza',
   },
   {
-    preview: '/images/favorites/chicken.png',
+    preview:
+      'https://bulatovatati.github.io/food-delivery/images/favorites/chicken.png',
     original:
       'https://bulatovatati.github.io/food-delivery/images/favorites/chicken-3x.png',
     description: 'photo of chicken',
   },
   {
-    preview: '/images/favorites/salat.png',
+    preview:
+      'https://bulatovatati.github.io/food-delivery/images/favorites/salat.png',
     original:
       'https://bulatovatati.github.io/food-delivery/images/favorites/salat-3x.png',
     description: 'photo of salat',
   },
   {
-    preview: '/images/favorites/borshch.png',
+    preview:
+      'https://bulatovatati.github.io/food-delivery/images/favorites/borshch.png',
     original:
       'https://bulatovatati.github.io/food-delivery/images/favorites/borshch-3x.png',
     description: 'photo of borshch',
