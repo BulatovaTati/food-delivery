@@ -23,7 +23,7 @@
 
   margin-bottom: 20px;
   padding: 10px;
-  border: 0.85px solid #ffe550;
+  border: 0.85px solid var(--primary-color);
   border-radius: 30px;
   outline: none;
   transition: border-color 250ms ease;
@@ -37,7 +37,7 @@
 .subscribe-form-input:focus-within,
 .subscribe-form-input:focus,
 .subscribe-form-input:hover {
-  border-color: #bbf330;
+  border-color: var(--highlight-color);
 }
 
 .subscribe-form-btn {
@@ -52,8 +52,8 @@
 
 .subscribe-form-btn:hover,
 .subscribe-form-btn:focus {
-  border-color: #ffe450;
-  background-color: #fefefe;
+  border-color: var(--primary-color);
+  background-color: var(--background-color);
 }
 
 @media screen and (min-width: 768px) {
@@ -94,7 +94,7 @@
     max-width: 394px;
     margin-right: 32px;
     padding: 10px;
-    border: 0.85px solid #ffe550;
+    border: 0.85px solid var(--primary-color);
     border-radius: 30px;
     outline: none;
     transition: border-color 250ms ease;
