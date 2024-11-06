@@ -1,9 +1,9 @@
 @keyframes animateVegetable {
   0% {
-    top: -100px; /* Start above the viewport */
+    top: -100px;
   }
   100% {
-    top: 100vh; /* End below the viewport */
+    top: 100vh;
   }
 }
 

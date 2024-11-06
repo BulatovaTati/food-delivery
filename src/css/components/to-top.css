@@ -1,0 +1,34 @@
+.scroll-to-top {
+  display: block;
+  position: fixed;
+  bottom: 60px;
+  right: 5%;
+
+  width: 45px;
+  height: 45px;
+
+  border-radius: 50%;
+  border: none;
+  background-color: #bbf330;
+  color: white;
+  cursor: pointer;
+
+  transition: opacity var(--time) var(--cubic),
+    transform var(--time) var(--cubic);
+}
+
+.scroll-to-top svg {
+  width: 20px;
+  height: 20px;
+}
+
+.scroll-to-top:hover,
+.scroll-to-top:focus {
+  transform: scale(1.1);
+}
+
+.js-transparent {
+  opacity: 0;
+  pointer-events: none;
+  transform: scale(0.9);
+}
