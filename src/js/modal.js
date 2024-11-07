@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
       modalElem.classList.add('active');
       overlay.classList.add('active');
-      document.body.classList.add('modal-open'); // Update Swiper instance when modal is opened
+      document.body.classList.add('modal-open');
     });
   });
 
